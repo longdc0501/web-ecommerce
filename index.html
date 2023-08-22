@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce</title>
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="feed">
+    <!--banner & search-->
+    <div class="banner-top">
+        <div class="search">
+            <div class="search-box">
+                <img src="assets/image/icon/search.svg" alt="search-icon">
+                <input type="text" placeholder="Kem dưỡng Lagumi...">
+            </div>
+            <a href="#" class="function-cart cart">
+                <div class="icon-status">
+                    <div class="quantity-bg">
+                        <div class="value">15</div>
+                    </div>
+                </div>
+                <img src="assets/image/icon/shopping-cart.svg" alt="cart-icon" class="icon-function">
+            </a>
+            <a href="#" class="function-cart transport">
+                <div class="icon-status">
+                    <div class="quantity-bg">
+                        <div class="value">7</div>
+                    </div>
+                </div>
+                <img src="assets/image/icon/truck.svg" alt="truck-icon" class="icon-function">
+            </a>
+        </div>
+        <div class="swiper hero-banner">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="assets/image/banner/banner1.jpg" alt="banner-hero">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="assets/image/banner/banner2.png" alt="banner-hero">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="assets/image/banner/banner3.png" alt="banner-hero">
+                    </a>
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+    <!--end banner & search-->
+    <!--category-->
+    <div class="list-category">
+        <div class="swiper swiper-category">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-cus">
+                    <a href="#" class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category1.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Thời Trang Nam</div>
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-slide-cus">
+                    <div class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category2.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Thời Trang Nữ</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-cus">
+                    <div class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category3.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Điện Thoại & Phụ Kiện</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-cus">
+                    <div class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category4.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Mẹ & Bé</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-cus">
+                    <div class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category5.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Thiết Bị Điện Tử</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-cus">
+                    <div class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category6.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Nhà Cửa & Đời Sống</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-cus">
+                    <div class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category7.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Máy Tính & Laptop</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-cus">
+                    <div class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category8.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Sắc đẹp</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-cus">
+                    <div class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category9.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Máy Ảnh & Máy Quay Phim</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-cus">
+                    <div class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category10.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Sức khỏe</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-cus">
+                    <div class="box-card">
+                        <div class="avatar">
+                            <img src="assets/image/category/category11.png" alt="category-img">
+                        </div>
+                        <div class="name-card">Đồng hồ</div>
+                    </div>
+                </div>
+            </div>
+            <!--            <div class="swiper-scrollbar bar1"></div>-->
+        </div>
+    </div>
+    <!--end category-->
+    <!--flash sale-->
+    <div class="box-product-sale">
+        <div class="title-sale">
+            <div class="flash-sale-and-time">
+                <div class="label-sale">
+                    <div class="label-flash">F</div>
+                    <div class="lightning">
+                        <img src="assets/image/icon/lightning.svg" alt="lightning-icon">
+                    </div>
+                    <div class="label-flash">SH</div>
+                    <div class="label-sale"> sale</div>
+                </div>
+                <div class="time">
+                    <div class="number" id="hour">12</div>
+                    <div class="separate">
+                        <img src="assets/image/icon/separate.svg" alt="separate-icon">
+                    </div>
+                    <div class="number" id="minutes">12</div>
+                    <div class="separate">
+                        <img src="assets/image/icon/separate.svg" alt="separate-icon">
+                    </div>
+                    <div class="number" id="seconds">12</div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#" class="label-more">Xem thêm</a>
+                <!--                <div class="icon-more">-->
+                <!--                    <img src="assets/image/icon/arrow.svg" alt="arrow-icon">-->
+                <!--                </div>-->
+            </div>
+        </div>
+        <div class="list-product-sale">
+            <div class="swiper flash-sale">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-cus">
+                        <a href="#" class="box-card">
+                            <div class="box-ava-sell">
+                                <div class="avatar">
+                                    <img src="assets/image/product/product.png" alt="product-img">
+                                </div>
+                                <div class="flag-sale">
+                                    <div class="flag-sale-value">
+                                        <div class="sale-label">Giảm</div>
+                                        <div class="sale-value">50%</div>
+                                    </div>
+                                    <img src="assets/image/icon/flag_sale.svg" alt="flag-sale">
+                                </div>
+                                <div class="super-discount-container">
+                                    <div class="discount-conent">Siêu giảm giá</div>
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <div class="product-name">Dồi gội dược liệu dove</div>
+                                <div class="product-value">
+                                    <div class="price-sell">
+                                        <div class="value">1.399.000đ</div>
+                                        <div class="discount">-20%</div>
+                                    </div>
+                                    <div class="price-original">2.999.000 đ</div>
+                                </div>
+                                <div class="product-count">
+                                    <div class="process">
+                                        <div class="second-layer" [style]="'width: '+(rowData.percent)+'%'"></div>
+                                        <div class="first-layer"></div>
+                                        <div class="icon-discount">
+                                            <img src="assets/image/icon/discount.svg" alt="icon-discount">
+                                        </div>
+                                    </div>
+                                    <div class="remain">Còn 233</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-cus">
+                        <a href="#" class="box-card">
+                            <div class="box-ava-sell">
+                                <div class="avatar">
+                                    <img src="assets/image/product/product.png" alt="product-img">
+                                </div>
+                                <div class="flag-sale">
+                                    <div class="flag-sale-value">
+                                        <div class="sale-label">Giảm</div>
+                                        <div class="sale-value">50%</div>
+                                    </div>
+                                    <img src="assets/image/icon/flag_sale.svg" alt="flag-sale">
+                                </div>
+                                <div class="super-discount-container">
+                                    <div class="discount-conent">Siêu giảm giá</div>
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <div class="product-name">Dồi gội dược liệu dove</div>
+                                <div class="product-value">
+                                    <div class="price-sell">
+                                        <div class="value">1.399.000đ</div>
+                                        <div class="discount">-20%</div>
+                                    </div>
+                                    <div class="price-original">2.999.000 đ</div>
+                                </div>
+                                <div class="product-count">
+                                    <div class="process">
+                                        <div class="second-layer" [style]="'width: '+(rowData.percent)+'%'"></div>
+                                        <div class="first-layer"></div>
+                                        <div class="icon-discount">
+                                            <img src="assets/image/icon/discount.svg" alt="icon-discount">
+                                        </div>
+                                    </div>
+                                    <div class="remain">Còn 233</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-cus">
+                        <a href="#" class="box-card">
+                            <div class="box-ava-sell">
+                                <div class="avatar">
+                                    <img src="assets/image/product/product.png" alt="product-img">
+                                </div>
+                                <div class="flag-sale">
+                                    <div class="flag-sale-value">
+                                        <div class="sale-label">Giảm</div>
+                                        <div class="sale-value">50%</div>
+                                    </div>
+                                    <img src="assets/image/icon/flag_sale.svg" alt="flag-sale">
+                                </div>
+                                <div class="super-discount-container">
+                                    <div class="discount-conent">Siêu giảm giá</div>
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <div class="product-name">Dồi gội dược liệu dove</div>
+                                <div class="product-value">
+                                    <div class="price-sell">
+                                        <div class="value">1.399.000đ</div>
+                                        <div class="discount">-20%</div>
+                                    </div>
+                                    <div class="price-original">2.999.000 đ</div>
+                                </div>
+                                <div class="product-count">
+                                    <div class="process">
+                                        <div class="second-layer" [style]="'width: '+(rowData.percent)+'%'"></div>
+                                        <div class="first-layer"></div>
+                                        <div class="icon-discount">
+                                            <img src="assets/image/icon/discount.svg" alt="icon-discount">
+                                        </div>
+                                    </div>
+                                    <div class="remain">Còn 233</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-cus">
+                        <a href="#" class="box-card">
+                            <div class="box-ava-sell">
+                                <div class="avatar">
+                                    <img src="assets/image/product/product.png" alt="product-img">
+                                </div>
+                                <div class="flag-sale">
+                                    <div class="flag-sale-value">
+                                        <div class="sale-label">Giảm</div>
+                                        <div class="sale-value">50%</div>
+                                    </div>
+                                    <img src="assets/image/icon/flag_sale.svg" alt="flag-sale">
+                                </div>
+                                <div class="super-discount-container">
+                                    <div class="discount-conent">Siêu giảm giá</div>
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <div class="product-name">Dồi gội dược liệu dove</div>
+                                <div class="product-value">
+                                    <div class="price-sell">
+                                        <div class="value">1.399.000đ</div>
+                                        <div class="discount">-20%</div>
+                                    </div>
+                                    <div class="price-original">2.999.000 đ</div>
+                                </div>
+                                <div class="product-count">
+                                    <div class="process">
+                                        <div class="second-layer" [style]="'width: '+(rowData.percent)+'%'"></div>
+                                        <div class="first-layer"></div>
+                                        <div class="icon-discount">
+                                            <img src="assets/image/icon/discount.svg" alt="icon-discount">
+                                        </div>
+                                    </div>
+                                    <div class="remain">Còn 233</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--        <div class="swiper-scrollbar bar1"></div>-->
+            </div>
+        </div>
+    </div>
+    <!--end flash sale-->
+    <div class="box-what-hot">
+        <div class="label">HÔM NAY CÓ GÌ</div>
+        <div class="grid-product">
+            <a href="#" class="grid-item">
+                <div class="box-product">
+                    <div class="avatar">
+                        <img src="assets/image/product/whathot.png" alt="product-img">
+                    </div>
+                    <div class="box-content-product">
+                        <div class="name-product">Dung dịch vệ sinh phụ nữ Lagumi chiết xuất trầu không đó là</div>
+                        <div class="promotion-tag-list">
+                            <div class="tag">50k Giảm</div>
+                            <div class="tag">Freeship</div>
+                        </div>
+                        <div class="product-value">
+                            <div class="amount">
+                                <div class="price-sell">1.399.000đ</div>
+                                <div class="price-original">2.999.000 đ</div>
+                            </div>
+                            <div class="sold">Đã bán 2k</div>
+                        </div>
+                    </div>
+                    <!--                    <div class="gift-info">-->
+                    <!--                        <img src="assets/image/product/gift.jpeg" alt="gift">-->
+                    <!--                        <div class="price">Quà tặng trị giá <b>429.000đ</b></div>-->
+                    <!--                    </div>-->
+                </div>
+            </a>
+            <a href="#" class="grid-item">
+                <div class="box-product">
+                    <div class="avatar">
+                        <img src="assets/image/product/whathot.png" alt="product-img">
+                    </div>
+                    <div class="box-content-product">
+                        <div class="name-product">Dung dịch vệ sinh phụ nữ Lagumi chiết xuất trầu không đó là</div>
+                        <div class="promotion-tag-list">
+                            <div class="tag">50k Giảm</div>
+                            <div class="tag">Freeship</div>
+                        </div>
+                        <div class="product-value">
+                            <div class="amount">
+                                <div class="price-sell">1.399.000đ</div>
+                                <div class="price-original">2.999.000 đ</div>
+                            </div>
+                            <div class="sold">Đã bán 2k</div>
+                        </div>
+                    </div>
+                    <!--                    <div class="gift-info">-->
+                    <!--                        <img src="assets/image/product/gift.jpeg" alt="gift">-->
+                    <!--                        <div class="price">Quà tặng trị giá <b>429.000đ</b></div>-->
+                    <!--                    </div>-->
+                </div>
+            </a>
+            <a href="#" class="grid-item">
+                <div class="box-product">
+                    <div class="avatar">
+                        <img src="assets/image/product/whathot.png" alt="product-img">
+                    </div>
+                    <div class="box-content-product">
+                        <div class="name-product">Dung dịch vệ sinh phụ nữ Lagumi chiết xuất trầu không đó là</div>
+                        <div class="promotion-tag-list">
+                            <div class="tag">50k Giảm</div>
+                            <div class="tag">Freeship</div>
+                        </div>
+                        <div class="product-value">
+                            <div class="amount">
+                                <div class="price-sell">1.399.000đ</div>
+                                <div class="price-original">2.999.000 đ</div>
+                            </div>
+                            <div class="sold">Đã bán 2k</div>
+                        </div>
+                    </div>
+                    <div class="gift-info">
+                        <img src="assets/image/product/gift.jpeg" alt="gift">
+                        <div class="price">Quà tặng trị giá <b>429.000đ</b></div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="grid-item">
+                <div class="box-product">
+                    <div class="avatar">
+                        <img src="assets/image/product/whathot.png" alt="product-img">
+                    </div>
+                    <div class="box-content-product">
+                        <div class="name-product">Dung dịch vệ sinh phụ nữ Lagumi chiết xuất trầu không đó là</div>
+                        <div class="promotion-tag-list">
+                            <div class="tag">50k Giảm</div>
+                            <div class="tag">Freeship</div>
+                        </div>
+                        <div class="product-value">
+                            <div class="amount">
+                                <div class="price-sell">1.399.000đ</div>
+                                <div class="price-original">2.999.000 đ</div>
+                            </div>
+                            <div class="sold">Đã bán 2k</div>
+                        </div>
+                    </div>
+                    <div class="gift-info">
+                        <img src="assets/image/product/gift.jpeg" alt="gift">
+                        <div class="price">Quà tặng trị giá <b>429.000đ</b></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/hero-banners.js"></script>
+<script src="js/category.js"></script>
+<script src="js/flash-sale.js"></script>
+
+</html>

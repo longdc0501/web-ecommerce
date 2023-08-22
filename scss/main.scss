@@ -1,0 +1,23 @@
+@import "variables";
+
+@import "hero-banners";
+@import "category";
+@import "flash-sale";
+@import "what-hot";
+
+body{
+  margin: unset;
+  background: #ECEFF1;
+
+  .feed{
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+  }
+
+  a{
+    text-decoration: none;
+  }
+}

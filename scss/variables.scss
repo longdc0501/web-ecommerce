@@ -1,0 +1,35 @@
+//variables
+$percent-sold: 70;
+
+$distance-common: 4;
+
+//colors
+$Black200:                                          #EEEEEE !default;
+$white:                                             #FFF !default;
+$primary-b-300:                                     #F06292 !default;
+$primary-b-500:                                     #E91E63 !default;
+$red-bold:                                          #F44336 !default;
+$orange-500:                                        #FF5722 !default;
+$orange-100:                                        #FFCCBC !default;
+$yellow-label:                                      #FFC062 !default;
+$primary-text:                                      #000 !default;
+$black1:                                            #181717 !default;
+$black-900:                                         #212121 !default;
+$text:                                              #172B4D !default;
+$placeholder-color:                                 #6B778C !default;
+$gray-4:                                            #BDBDBD !default;
+$gray-5:                                            #AFAFAF !default;
+
+//font-family
+$font-family-common:                                'Roboto';
+$font-family-Label:                                 'SF Pro Text';
+$font-family-name:                                  'Helvetica Neue';
+
+// Font Weight
+$font-weight-lighter:         						lighter !default;
+$font-weight-light:           						300 !default;
+$font-weight-normal:          						400 !default;
+$font-weight-bold:            						500 !default;
+$font-weight-bolder:          						600 !default;
+$font-weight-boldest:          						700 !default;
+$font-weight-very-bold:          					800 !default;

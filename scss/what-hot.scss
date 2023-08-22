@@ -1,0 +1,245 @@
+.box-what-hot {
+  background: $white;
+  display: flex;
+  gap: 11px;
+  flex-direction: column;
+  padding-top: $distance-common*3px;
+
+  .label {
+    color: $primary-text;
+    font-family: $font-family-common;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: $font-weight-boldest;
+    line-height: 14px;
+    text-transform: uppercase;
+    padding-left: $distance-common*3px;
+  }
+
+  .grid-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $distance-common*1px;
+    justify-content: space-between;
+    justify-items: stretch;
+    align-content: space-evenly;
+    margin: 0 $distance-common*1px $distance-common*4px;
+
+    .grid-item {
+      display: flex;
+      justify-content: center;
+
+      .box-product {
+        width: 100%;
+        border: 0.5px solid $gray-5;
+        background: $white;
+
+        .avatar {
+          width: 100%;
+          aspect-ratio: 1/1;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-bottom: none;
+            object-fit: cover;
+            vertical-align: middle;
+            display: block;
+          }
+        }
+
+        .name-card {
+          color: $black1;
+          text-align: center;
+          font-family: 'Roboto';
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 14px;
+        }
+
+        .flag-sale {
+          position: absolute;
+          z-index: 10;
+          width: 178px;
+          height: 178px;
+
+          img {
+            position: absolute;
+            left: 0;
+            height: 68px;
+            object-fit: cover;
+          }
+
+          .flag-sale-value {
+            position: absolute;
+            z-index: 11;
+            width: 46px;
+            height: 68px;
+
+            .sale-label {
+              color: $white;
+              text-align: center;
+              font-family: $font-family-Label;
+              font-size: 10px;
+              font-style: normal;
+              font-weight: $font-weight-normal;
+              line-height: normal;
+              padding-top: 10px;
+            }
+
+            .sale-value {
+              color: $white;
+              text-align: center;
+              font-family: $font-family-Label;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: $font-weight-boldest;
+              line-height: 14px;
+            }
+          }
+        }
+
+        .super-discount-container {
+          position: absolute;
+          z-index: 12;
+          width: 178px;
+          height: 178px;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+
+          .discount-conent {
+            width: 100%;
+            background: linear-gradient(90.47deg, #5216FE 5.14%, #FE3131 69.71%);
+            border-radius: 0 0 6px 6px;
+            padding: 10px 0;
+
+            .content {
+              color: $yellow-label;
+              font-family: $font-family-name;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: $font-weight-boldest;
+              line-height: 12px;
+              text-align: left;
+              padding: 0 10px;
+            }
+          }
+        }
+
+        .box-content-product {
+          display: flex;
+          padding: $distance-common*2px;
+          flex-direction: column;
+          gap: $distance-common*3px;
+
+          .name-product {
+            min-height: 30px;
+            color: $primary-text;
+            font-family: $font-family-common;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: $font-weight-normal;
+            line-height: 15px;
+            word-wrap: break-word;
+            width: 100%;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+
+          .promotion-tag-list {
+            display: flex;
+            gap: $distance-common*2px;
+
+            .tag {
+              color: $white;
+              font-family: $font-family-common;
+              font-size: 8px;
+              font-style: normal;
+              font-weight: $font-weight-bold;
+              line-height: normal;
+              padding: $distance-common*1px $distance-common*2px;
+              background-image: url("../assets/image/icon/tag.svg");
+              background-size: cover;
+            }
+          }
+
+          .product-value {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .amount {
+              display: flex;
+              align-items: center;
+              gap: $distance-common*1px;
+
+              .price-sell {
+                color: $primary-b-500;
+                font-family: $font-family-name;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: $font-weight-boldest;
+                line-height: normal;
+              }
+
+              .price-original {
+                color: $gray-4;
+                font-family: $font-family-name;
+                font-size: 8px;
+                font-style: normal;
+                font-weight: $font-weight-normal;
+                line-height: normal;
+                text-decoration-line: strikethrough;
+              }
+            }
+
+            .sold {
+              color: $placeholder-color;
+              text-align: center;
+              font-family: $font-family-common;
+              font-size: 10px;
+              font-style: normal;
+              font-weight: $font-weight-normal;
+              line-height: 14px;
+            }
+          }
+
+          //hr {
+          //  background: $gray-4;
+          //  height: 0.3px;
+          //  margin: unset;
+          //}
+        }
+
+        .gift-info {
+          display: flex;
+          align-items: center;
+          margin: 0 $distance-common*2px;
+          gap: $distance-common*1px;
+          border-top: solid $gray-4 0.3px;
+          padding-top: $distance-common*1px;
+          padding-bottom: $distance-common*2px;
+
+          img {
+            width: 32px;
+            border-radius: 6px;
+            border: 1px solid $orange-100;
+          }
+
+          .price {
+            color: $text;
+            font-family: $font-family-Label;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: $font-weight-normal;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+  }
+}
