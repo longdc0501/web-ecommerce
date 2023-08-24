@@ -1,0 +1,61 @@
+body {
+  margin: unset;
+  background: #ECEFF1;
+}
+body .container-page {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+}
+body a {
+  text-decoration: none;
+}
+
+.photo-product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.photo-product img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.photo-product .super-discount-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin-top: -58px;
+  height: 58px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.photo-product .super-discount-container .discount-content {
+  background: linear-gradient(90.47deg, #5216FE 5.14%, #FE3131 69.71%);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.photo-product .super-discount-container .discount-content .content {
+  color: #FFC062;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+}
+.photo-product .super-discount-container .discount-content .discount-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main-product.css.map */
