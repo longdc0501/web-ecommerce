@@ -1,0 +1,146 @@
+.photo-product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .super-discount-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin-top: -58px;
+    height: 58px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    .discount-content {
+      background: linear-gradient(90.47deg, #5216FE 5.14%, #FE3131 69.71%);
+      //border-radius: 0 0 6px 6px;
+      padding: $distance-common*2px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .content {
+        color: $yellow-label;
+        font-family: $font-family-common;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: $font-weight-boldest;
+        line-height: 12px;
+        text-align: left;
+      }
+
+      .discount-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .label {
+          color: $white;
+          text-align: center;
+          font-family: $font-family-common;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: $font-weight-normal;
+          line-height: 25px;
+        }
+
+        .countdown {
+          color: $white;
+          font-family: Roboto;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: $font-weight-bolder;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  .action-back{
+    position: absolute;
+    z-index: 1;
+    background: $white;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15));
+    top: $distance-common*4px;
+    left: $distance-common*4px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      width: 23.53px;
+      height: 23.53px;
+    }
+  }
+
+
+
+  .action-cart {
+    position: absolute;
+    z-index: 1;
+    top: $distance-common*2px;
+    right: $distance-common*4px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.37);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .function-cart{
+      height: 28px;
+      width: 31px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .icon-status {
+        position: absolute;
+        width: 31px;
+        height: 28px;
+
+        .quantity-bg{
+          position: absolute;
+          right: 0;
+          z-index: 2;
+          border-radius: 14px;
+          border: solid $white 1px;
+          width: 14px;
+          height: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $primary-b-300;
+
+          .value{
+            color: $white;
+            font-family: $font-family-common;
+            font-size: 0.5rem;
+            font-style: normal;
+            font-weight: $font-weight-normal;
+          }
+        }
+      }
+
+      .icon-function {
+        width: 24px;
+      }
+    }
+
+  }
+}
