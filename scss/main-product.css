@@ -140,6 +140,11 @@
   font-style: normal;
   font-weight: 600;
   line-height: 22px;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .name-and-amount .amount-product {
   display: flex;
@@ -163,6 +168,44 @@
   font-weight: 400;
   line-height: 20px;
   text-decoration-line: line-through;
+}
+
+.product-quality {
+  background: #FFF;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+}
+.product-quality .rating {
+  display: flex;
+  gap: 4px;
+  margin-right: 12px;
+}
+.product-quality .rating img {
+  width: 17px;
+}
+.product-quality .rating .scores {
+  color: #263238;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.product-quality .seperate {
+  width: 0.5px;
+  height: 19px;
+  background: #ECEFF1;
+}
+.product-quality .sold {
+  color: #263238;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 8px;
 }
 
 body {
