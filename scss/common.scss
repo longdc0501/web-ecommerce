@@ -1,0 +1,18 @@
+//common
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-end{
+  justify-content: end;
+}
+
+.fill {
+  flex-grow: 1;
+  flex-shrink: 0;
+}

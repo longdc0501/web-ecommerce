@@ -16,8 +16,8 @@ body {
       position: fixed;
       z-index: 2;
       top: 0;
-      left: 0;
       width: 100%;
+      max-width: 768px;
       height: 48px;
 
       .title {
@@ -43,7 +43,7 @@ body {
         img {
           width: 24px;
         }
-      }
+      } 
     }
 
     .grid-product {

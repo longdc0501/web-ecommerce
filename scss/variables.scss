@@ -5,6 +5,8 @@ $distance-common: 4;
 
 $ratingSize: 80px;
 
+$default-transitions: transform 0.5s, border-radius 0.5s;
+
 //colors
 $Black50:                                           #FAFAFA !default;
 $Black200:                                          #EEEEEE !default;
@@ -21,9 +23,11 @@ $primary-text:                                      #000 !default;
 $black1:                                            #181717 !default;
 $black-900:                                         #212121 !default;
 $ink-900:                                           #263238 !default;
+$divider:                                           #333 !default;
 $text:                                              #172B4D !default;
 $placeholder-color:                                 #6B778C !default;
 $ink-400:                                           #78909C !default;
+$overlay:                                           #888 !default;
 $ink-300:                                           #90A4AE !default;
 $gray-4:                                            #BDBDBD !default;
 $gray-5:                                            #AFAFAF !default;

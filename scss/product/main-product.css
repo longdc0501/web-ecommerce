@@ -1,3 +1,21 @@
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.fill {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
 .photo-product {
   position: relative;
   width: 100%;
@@ -933,6 +951,83 @@
   height: 16px;
 }
 
+#sheet-gift {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+#sheet-gift .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #888;
+  opacity: 0.5;
+}
+#sheet-gift .contents {
+  border-radius: 1rem 1rem 0 0;
+  background: #FFF;
+  position: relative;
+  overflow-y: hidden;
+  transition: transform 0.5s, border-radius 0.5s;
+  transform: translateY(0);
+  max-height: 100vh;
+  height: 30vh;
+  max-width: 70rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+#sheet-gift .contents:not(.not-selectable) {
+  transition: transform 0.5s, border-radius 0.5s, height 0.5s;
+}
+#sheet-gift .contents .fullscreen {
+  border-radius: 0;
+}
+#sheet-gift .contents .draggable-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 3rem;
+  margin: auto;
+  padding: 1rem;
+  cursor: grab;
+}
+#sheet-gift .contents .draggable-area .draggable-thumb {
+  width: inherit;
+  height: 0.25rem;
+  background: #333;
+  border-radius: 0.125rem;
+}
+#sheet-gift .contents .close-sheet {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+}
+#sheet-gift .contents .body {
+  height: 100%;
+  overflow-y: auto;
+  gap: 1rem;
+}
+
+#sheet-gift[aria-hidden=true] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+#sheet-gift[aria-hidden=true] .contents {
+  transform: translateY(100%);
+}
+
 body {
   margin: unset;
   background: #ECEFF1;
@@ -947,6 +1042,7 @@ body .container-page {
 }
 body .container-page .list-action {
   position: fixed;
+  max-width: 768px;
   z-index: 6;
   bottom: 0;
   width: 100%;

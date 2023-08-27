@@ -111,7 +111,7 @@
                 <img src="../assets/image/product/gift.jpeg" alt="gift">
             </div>
         </div>
-        <div class="view-gift">
+        <div class="view-gift" id="open-gift">
             <div class="label">Xem quà tặng</div>
             <img src="../assets/image/icon/chevron-right.svg" alt="chevron-right">
         </div>
@@ -314,8 +314,33 @@
         <div class="buy-with-voucher">Mua với voucher</div>
     </div>
     <!--end action-->
+    <!-- The sheet component -->
+    <div id="sheet-gift" class="column items-center justify-end" aria-hidden="true">
+        <!-- Dark background for the sheet -->
+        <div class="overlay"></div>
+
+        <!-- The sheet itself -->
+        <div class="contents column">
+            <!-- Sheet controls -->
+            <header class="controls">
+                <!-- The thing to drag if you want to resize the sheet -->
+                <div class="draggable-area">
+                    <div class="draggable-thumb"></div>
+                </div>
+                <!-- Button to close the sheet -->
+                <button class="close-sheet" type="button" title="Close the sheet">&times;</button>
+            </header>
+
+            <!-- Body of the sheet -->
+            <main class="body fill column">
+                <h2>Hello, World!</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit explicabo vero quas eligendi, eos cupiditate sint aliquam a omnis commodi quos in libero veniam. Quidem, non a quibusdam consequuntur mollitia officia numquam sit quos dolorum quaerat reprehenderit laboriosam perspiciatis consequatur odit error dolore recusandae iste id quam magnam ut! Sint nulla minus excepturi libero officiis, deleniti, delectus obcaecati saepe natus rerum nesciunt!</p>
+            </main>
+        </div>
+    </div>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <!--<script src="../js/list-voucher.js"></script>-->
+<script src="../js/product/list-gift.js"></script>
 </html>

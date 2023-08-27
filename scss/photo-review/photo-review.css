@@ -14,8 +14,8 @@ body .container-photo-review .header {
   position: fixed;
   z-index: 2;
   top: 0;
-  left: 0;
   width: 100%;
+  max-width: 768px;
   height: 48px;
 }
 body .container-photo-review .header .title {
