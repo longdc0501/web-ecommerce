@@ -20,7 +20,7 @@
   }
 
   .contents {
-    border-radius: 1rem 1rem 0 0;
+    //border-radius: 1rem 1rem 0 0;
     background: $white;
     position: relative;
     overflow-y: hidden;
@@ -28,10 +28,12 @@
     transform: translateY(0);
     max-height: 100vh;
     height: 30vh;
-    max-width: 70rem;
+    //max-width: 70rem;
+    max-width: 768px;
+    width: 100%;
     box-sizing: border-box;
-    padding: 1rem;
-    padding-top: 3rem;
+    //padding: 1rem;
+    //padding-top: 3rem;
 
     &:not(.not-selectable) {
       transition: $default-transitions, height 0.5s;
@@ -68,7 +70,7 @@
 
     .body {
       height: 100%;
-      overflow-y: auto;
+      //overflow-y: auto;
       gap: 1rem;
     }
   }
@@ -81,5 +83,123 @@
 
   .contents {
     transform: translateY(100%);
+  }
+}
+
+.content-gift {
+  display: flex;
+  flex-direction: column;
+  gap: $distance-common*5px;
+  padding: $distance-common*5px $distance-common*3px;
+  height: 100%;
+  overflow-y: auto;
+
+  .label {
+    color: $primary-text;
+    font-family: $font-family-common;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $font-weight-bolder;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .list-gift {
+    padding: 0 $distance-common*1px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: 152px;
+    overflow-y: auto;
+
+    .item-gift {
+      display: flex;
+
+      img {
+        min-width: 66.172px;
+        width: 66.172px;
+        height: 69px;
+        border-radius: 6px;
+        background: $Black200;
+        vertical-align: middle;
+        border-style: none;
+        display: block;
+        object-fit: cover;
+      }
+
+      .info-num {
+        padding-left: $distance-common*1px;
+        padding-top: $distance-common*1px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .quantity {
+          color: $primary-text;
+          font-family: $font-family-common;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: $font-weight-normal;
+          line-height: normal;
+        }
+
+        .free {
+          color: $link;
+          font-family: $font-family-common;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: $font-weight-bold;
+          line-height: normal;
+        }
+      }
+
+      .name-amount {
+        padding-left: $distance-common*3px;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+
+        .name-gift {
+          color: $text;
+          font-family: $font-family-common;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: $font-weight-normal;
+          line-height: 20px;
+          word-wrap: break-word;
+          text-align: left;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+
+        .price {
+          color: $placeholder-color;
+          font-family: $font-family-common;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: $font-weight-normal;
+          line-height: normal;
+          text-decoration-line: line-through;
+        }
+      }
+    }
+  }
+
+  .submit{
+    margin: 0 $distance-common*3px;
+    height: 48px;
+    background: $primary-b-300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    text-align: center;
+    font-family: $font-family-common;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $font-weight-boldest;
+    line-height: normal;
   }
 }

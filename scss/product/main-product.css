@@ -972,7 +972,6 @@
   opacity: 0.5;
 }
 #sheet-gift .contents {
-  border-radius: 1rem 1rem 0 0;
   background: #FFF;
   position: relative;
   overflow-y: hidden;
@@ -980,10 +979,9 @@
   transform: translateY(0);
   max-height: 100vh;
   height: 30vh;
-  max-width: 70rem;
+  max-width: 768px;
+  width: 100%;
   box-sizing: border-box;
-  padding: 1rem;
-  padding-top: 3rem;
 }
 #sheet-gift .contents:not(.not-selectable) {
   transition: transform 0.5s, border-radius 0.5s, height 0.5s;
@@ -1015,7 +1013,6 @@
 }
 #sheet-gift .contents .body {
   height: 100%;
-  overflow-y: auto;
   gap: 1rem;
 }
 
@@ -1026,6 +1023,113 @@
 }
 #sheet-gift[aria-hidden=true] .contents {
   transform: translateY(100%);
+}
+
+.content-gift {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 12px;
+  height: 100%;
+  overflow-y: auto;
+}
+.content-gift .label {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.content-gift .list-gift {
+  padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 152px;
+  overflow-y: auto;
+}
+.content-gift .list-gift .item-gift {
+  display: flex;
+}
+.content-gift .list-gift .item-gift img {
+  min-width: 66.172px;
+  width: 66.172px;
+  height: 69px;
+  border-radius: 6px;
+  background: #EEEEEE;
+  vertical-align: middle;
+  border-style: none;
+  display: block;
+  object-fit: cover;
+}
+.content-gift .list-gift .item-gift .info-num {
+  padding-left: 4px;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content-gift .list-gift .item-gift .info-num .quantity {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.content-gift .list-gift .item-gift .info-num .free {
+  color: #2196F3;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.content-gift .list-gift .item-gift .name-amount {
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.content-gift .list-gift .item-gift .name-amount .name-gift {
+  color: #172B4D;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+  text-align: left;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.content-gift .list-gift .item-gift .name-amount .price {
+  color: #6B778C;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: line-through;
+}
+.content-gift .submit {
+  margin: 0 12px;
+  height: 48px;
+  background: #F06292;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 body {
