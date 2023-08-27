@@ -3,12 +3,16 @@ $percent-sold: 70;
 
 $distance-common: 4;
 
+$ratingSize: 80px;
+
 //colors
+$Black50:                                           #FAFAFA !default;
 $Black200:                                          #EEEEEE !default;
 $white:                                             #FFF !default;
 $background-common:                                 #ECEFF1 !default;
 $primary-b-300:                                     #F06292 !default;
 $primary-b-500:                                     #E91E63 !default;
+$red:                                               #EB5757 !default;
 $red-bold:                                          #F44336 !default;
 $orange-500:                                        #FF5722 !default;
 $orange-100:                                        #FFCCBC !default;
@@ -20,8 +24,13 @@ $ink-900:                                           #263238 !default;
 $text:                                              #172B4D !default;
 $placeholder-color:                                 #6B778C !default;
 $ink-400:                                           #78909C !default;
+$ink-300:                                           #90A4AE !default;
 $gray-4:                                            #BDBDBD !default;
 $gray-5:                                            #AFAFAF !default;
+$gray-6:                                            #C4C4C4 !default;
+$gray-7:                                            #EBEAED !default;
+$green-1:                                           #0C8441 !default;
+$green-2:                                           #5FAF3A !default;
 
 //font-family
 $font-family-common:                                'Roboto';

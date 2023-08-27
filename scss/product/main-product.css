@@ -1,0 +1,1004 @@
+.photo-product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.photo-product img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.photo-product .super-discount-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin-top: -58px;
+  height: 58px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.photo-product .super-discount-container .discount-content {
+  background: linear-gradient(90.47deg, #5216FE 5.14%, #FE3131 69.71%);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.photo-product .super-discount-container .discount-content .content {
+  color: #FFC062;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+}
+.photo-product .super-discount-container .discount-content .discount-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo-product .super-discount-container .discount-content .discount-time .label {
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.photo-product .super-discount-container .discount-content .discount-time .countdown {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+}
+.photo-product .action-back {
+  position: absolute;
+  z-index: 1;
+  background: #FFF;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15));
+  top: 16px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo-product .action-back img {
+  width: 23.53px;
+  height: 23.53px;
+}
+.photo-product .action-cart {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.37);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo-product .action-cart .function-cart {
+  height: 28px;
+  width: 31px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.photo-product .action-cart .function-cart .icon-status {
+  position: absolute;
+  width: 31px;
+  height: 28px;
+}
+.photo-product .action-cart .function-cart .icon-status .quantity-bg {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  border-radius: 14px;
+  border: solid #FFF 1px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F06292;
+}
+.photo-product .action-cart .function-cart .icon-status .quantity-bg .value {
+  color: #FFF;
+  font-family: "Roboto";
+  font-size: 0.5rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.photo-product .action-cart .function-cart .icon-function {
+  width: 24px;
+}
+
+.name-and-amount {
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px 0;
+}
+.name-and-amount .name-product {
+  color: #263238;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.name-and-amount .amount-product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.name-and-amount .amount-product .price-sell {
+  color: #E91E63;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+}
+.name-and-amount .amount-product .price-original {
+  color: #78909C;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: line-through;
+}
+
+.product-quality {
+  background: #FFF;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+}
+.product-quality .rating {
+  display: flex;
+  gap: 4px;
+  margin-right: 12px;
+}
+.product-quality .rating img {
+  width: 17px;
+}
+.product-quality .rating .scores {
+  color: #263238;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.product-quality .seperate {
+  width: 0.5px;
+  height: 19px;
+  background: #ECEFF1;
+}
+.product-quality .sold {
+  color: #263238;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.my-voucher {
+  background: #FFF;
+  padding-left: 12px;
+}
+.my-voucher .label-box {
+  padding-top: 8px;
+  color: #000;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.my-voucher .list-voucher-swiper {
+  padding: 12px 0;
+}
+.my-voucher .list-voucher-swiper .list-voucher {
+  height: 100%;
+}
+.my-voucher .list-voucher-swiper .list-voucher .swiper-slide-cus .box-card {
+  background: #FFF;
+  width: 245px;
+  height: 72px;
+  background-image: url("../../assets/image/icon/box-voucher.svg");
+  background-size: cover;
+  display: flex;
+}
+.my-voucher .box-scroll {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 8px 0;
+}
+.my-voucher .box-scroll .flex-row {
+  display: flex;
+  gap: 4px;
+}
+.my-voucher .box-scroll .flex-row .box-card {
+  background: #FFF;
+  min-width: 245px;
+  height: 72px;
+  background-image: url("../../assets/image/icon/box-voucher.svg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.my-voucher .box-scroll .flex-row .box-card .voucher-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  gap: 4px;
+}
+.my-voucher .box-scroll .flex-row .box-card .voucher-info .voucher-name {
+  color: #F44336;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.my-voucher .box-scroll .flex-row .box-card .voucher-info .condition {
+  display: flex;
+  gap: 12px;
+}
+.my-voucher .box-scroll .flex-row .box-card .voucher-info .condition .item {
+  color: #90A4AE;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.my-voucher .box-scroll .flex-row .box-card .voucher-info .expired {
+  display: flex;
+  gap: 4px;
+}
+.my-voucher .box-scroll .flex-row .box-card .voucher-info .expired img {
+  width: 12px;
+  height: 12px;
+}
+.my-voucher .box-scroll .flex-row .box-card .voucher-info .expired .label-expired {
+  color: #EB5757;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.my-voucher .box-scroll .flex-row .box-card .action-use {
+  margin-right: 20px;
+  padding: 4px 8px;
+  color: #FFF;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 3px;
+  background: #F06292;
+  height: fit-content;
+}
+
+.my-gift {
+  background: #FFF;
+  display: flex;
+  display: flex;
+  align-items: center;
+  padding: 8px 0 8px 8px;
+}
+.my-gift .gift-value {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.my-gift .gift-value .label {
+  color: #0C8441;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  padding: 4px;
+  border-radius: 2px;
+  border: 0.5px solid #5FAF3A;
+}
+.my-gift .gift-value .value {
+  color: #263238;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.my-gift .photo-gift {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  gap: 4px;
+}
+.my-gift .photo-gift .gift-preview {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #FFCCBC;
+}
+.my-gift .photo-gift .gift-preview .overlay {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(33, 33, 33, 0.4);
+}
+.my-gift .photo-gift .gift-preview .overlay .number-more {
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.my-gift .photo-gift .gift-preview img {
+  width: 100%;
+  height: 100%;
+  border-bottom: none;
+  object-fit: cover;
+  vertical-align: middle;
+  display: block;
+  border-radius: 6px;
+}
+.my-gift .photo-gift img {
+  width: 24px;
+  height: 24px;
+}
+.my-gift .view-gift {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+.my-gift .view-gift .label {
+  color: #0C8441;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+}
+.my-gift .view-gift img {
+  width: 16px;
+  height: 16px;
+}
+
+.ship-box {
+  padding: 8px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ship-box .shipping-fee {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.ship-box .shipping-fee img {
+  width: 20px;
+}
+.ship-box .shipping-fee .fee {
+  color: #000;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 12px;
+}
+.ship-box .free-shipping {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.ship-box .free-shipping img {
+  width: 20px;
+}
+.ship-box .free-shipping .label {
+  color: #000;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.product-suggestion .label {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+.product-suggestion .grid-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4px;
+  justify-content: space-between;
+  justify-items: stretch;
+  align-content: space-evenly;
+  margin: 12px 4px 60px;
+}
+.product-suggestion .grid-product .grid-item {
+  display: flex;
+  justify-content: center;
+}
+.product-suggestion .grid-product .grid-item .box-product {
+  width: 100%;
+  border: 0.5px solid #AFAFAF;
+  background: #FFF;
+}
+.product-suggestion .grid-product .grid-item .box-product .avatar {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.product-suggestion .grid-product .grid-item .box-product .avatar img {
+  width: 100%;
+  height: 100%;
+  border-bottom: none;
+  object-fit: cover;
+  vertical-align: middle;
+  display: block;
+}
+.product-suggestion .grid-product .grid-item .box-product .name-card {
+  color: #181717;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.product-suggestion .grid-product .grid-item .box-product .flag-sale {
+  position: absolute;
+  z-index: 10;
+  width: 178px;
+  height: 178px;
+}
+.product-suggestion .grid-product .grid-item .box-product .flag-sale img {
+  position: absolute;
+  left: 0;
+  height: 68px;
+  object-fit: cover;
+}
+.product-suggestion .grid-product .grid-item .box-product .flag-sale .flag-sale-value {
+  position: absolute;
+  z-index: 11;
+  width: 46px;
+  height: 68px;
+}
+.product-suggestion .grid-product .grid-item .box-product .flag-sale .flag-sale-value .sale-label {
+  color: #FFF;
+  text-align: center;
+  font-family: "SF Pro Text";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 10px;
+}
+.product-suggestion .grid-product .grid-item .box-product .flag-sale .flag-sale-value .sale-value {
+  color: #FFF;
+  text-align: center;
+  font-family: "SF Pro Text";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+}
+.product-suggestion .grid-product .grid-item .box-product .super-discount-container {
+  position: absolute;
+  z-index: 12;
+  width: 178px;
+  height: 178px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.product-suggestion .grid-product .grid-item .box-product .super-discount-container .discount-conent {
+  width: 100%;
+  background: linear-gradient(90.47deg, #5216FE 5.14%, #FE3131 69.71%);
+  border-radius: 0 0 6px 6px;
+  padding: 10px 0;
+}
+.product-suggestion .grid-product .grid-item .box-product .super-discount-container .discount-conent .content {
+  color: #FFC062;
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+  padding: 0 10px;
+}
+.product-suggestion .grid-product .grid-item .box-product .box-content-product {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  gap: 12px;
+}
+.product-suggestion .grid-product .grid-item .box-product .box-content-product .name-product {
+  min-height: 30px;
+  color: #000;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  word-wrap: break-word;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.product-suggestion .grid-product .grid-item .box-product .box-content-product .promotion-tag-list {
+  display: flex;
+  gap: 8px;
+}
+.product-suggestion .grid-product .grid-item .box-product .box-content-product .promotion-tag-list .tag {
+  color: #FFF;
+  font-family: "Roboto";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 4px 8px;
+  background-image: url("../../assets/image/icon/tag.svg");
+  background-size: cover;
+}
+.product-suggestion .grid-product .grid-item .box-product .box-content-product .product-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-suggestion .grid-product .grid-item .box-product .box-content-product .product-value .amount {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.product-suggestion .grid-product .grid-item .box-product .box-content-product .product-value .amount .price-sell {
+  color: #E91E63;
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.product-suggestion .grid-product .grid-item .box-product .box-content-product .product-value .amount .price-original {
+  color: #BDBDBD;
+  font-family: "Helvetica Neue";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: line-through;
+}
+.product-suggestion .grid-product .grid-item .box-product .box-content-product .product-value .sold {
+  color: #6B778C;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.product-suggestion .grid-product .grid-item .box-product .gift-info {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  gap: 4px;
+  border-top: solid #BDBDBD 0.3px;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+.product-suggestion .grid-product .grid-item .box-product .gift-info img {
+  width: 32px;
+  border-radius: 6px;
+  border: 1px solid #FFCCBC;
+}
+.product-suggestion .grid-product .grid-item .box-product .gift-info .price {
+  color: #172B4D;
+  font-family: "SF Pro Text";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.product-review {
+  background: #FFF;
+}
+.product-review .product-rating {
+  padding: 12px 4px 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+.product-review .product-rating .rating-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-review .product-rating .rating-info .label {
+  color: #263238;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.product-review .product-rating .rating-info .rating {
+  display: flex;
+  gap: 4px;
+}
+.product-review .product-rating .rating-info .rating .list-star {
+  height: 16px;
+  position: relative;
+  width: 80px;
+}
+.product-review .product-rating .rating-info .rating .list-star:before {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEPSURBVHgBbVA9bsIwFH4vJVLG9AQle6WUuRs36AmaI3ADfIPmBi036MbY9gRU6oA6IJfJgDpkKUpc48dzEhABP8my/f2899kAntpsfh+VWgsfhz5wtVpLRIy32zBJkuvilAvOxUqpjAj61kIcRXp0MUFKGROFN4gwCAJ0ewZA/ZYuiGxuLS4Z+wEwn7hYyBF3fGKWuhHJl/i1Rubzb8GmsU/JbyEu3vC9LP8ejsRs9iUYHLf6ExM50yRNb7POo4vC5FpXoPU/rwqbsyZ3ryr9fND1jodeead105TjcdcmUUsPeH10DMaYlJyyzg05wBX/0K7+YobSiwk81hEvYRiJ4fB+6bDp9G0SBDvRmuraA+YEf8/MDsN6AAAAAElFTkSuQmCC") !important;
+  background-repeat: repeat-x;
+  background-size: 16px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+}
+.product-review .product-rating .rating-info .rating .list-star > span {
+  display: block;
+  text-indent: -10000px;
+  width: 80px;
+  height: 16px;
+  position: absolute;
+  overflow: hidden;
+}
+.product-review .product-rating .rating-info .rating .list-star > span:before {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAELSURBVHgBhVA9TsMwFP5eUhiQEBEDYqMDA1vVEzRwAzhBF/beoOEIHAAVLsDGxNCIA6AgRga4AR3K0Njx46sTLJVGrS1b9vfj5/cBLUM/zgZc0zYuagOxsBkWVarvp+lWg752BzSkKC1g7Pg/LzpNEuztnsDu9CFywDUi3q3Z5QvuHhXeoFLAzgvRl+MhLxMySrFAsWkU4r/xfJRxb8rTiIh4cGpT6xOd+EIC+nRIE8Ze7+uIBL/wO6U7l8vZTFYaftz/Jpl4Ud2DclLjhnL187CSkk7YvKkSJgSfUFkt45X6jP56rPG8F8TG5TBmRNOXx0zZ+5N1gsHaBC7OmdiNXNu8QW/1LsqIBcMvDp90Z6nSYMkAAAAASUVORK5CYII=") !important;
+  background-repeat: repeat-x;
+  background-size: 16px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-indent: 10000px;
+  top: 0;
+}
+.product-review .product-rating .rating-info .rating .rating-point {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.product-review .product-rating .rating-info .rating .rating-num {
+  color: #AFAFAF;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.product-review .product-rating .image-review {
+  display: flex;
+  gap: 8px;
+  padding: 20px 0 16px;
+  border-bottom: solid #90A4AE 0.5px;
+}
+.product-review .product-rating .image-review .box-photo {
+  border-radius: 6px;
+  border: 1px solid #C4C4C4;
+  background: #C4C4C4;
+  width: 70.698px;
+  height: 80px;
+  position: relative;
+}
+.product-review .product-rating .image-review .box-photo .overlay {
+  width: 70.698px;
+  height: 80px;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.85);
+}
+.product-review .product-rating .image-review .box-photo .overlay .number-more {
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.product-review .product-rating .image-review .box-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  display: block;
+  border-radius: 6px;
+}
+.product-review .review {
+  padding: 12px 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.product-review .review .comment-review {
+  display: flex;
+  gap: 8px;
+}
+.product-review .review .comment-review .box-avatar {
+  width: 32px;
+  height: 32px;
+}
+.product-review .review .comment-review .box-avatar img {
+  vertical-align: middle;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 32px;
+}
+.product-review .review .comment-review .comment {
+  width: 100%;
+}
+.product-review .review .comment-review .comment .comment-primary {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background: #FAFAFA;
+}
+.product-review .review .comment-review .comment .comment-primary .customer-name {
+  color: #263238;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.product-review .review .comment-review .comment .comment-primary .comment-content {
+  color: #263238;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 8px;
+}
+.product-review .review .comment-review .comment .comment-primary .list-photo {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+.product-review .review .comment-review .comment .comment-primary .list-photo .box-photo {
+  border: 1px solid #C4C4C4;
+  background: #C4C4C4;
+  width: 74px;
+  height: 74px;
+  position: relative;
+}
+.product-review .review .comment-review .comment .comment-primary .list-photo .box-photo .overlay {
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.85);
+}
+.product-review .review .comment-review .comment .comment-primary .list-photo .box-photo .overlay .number-more {
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.product-review .review .comment-review .comment .comment-primary .list-photo .box-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  display: block;
+}
+.product-review .review .comment-review .comment .time {
+  color: #78909C;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 8px;
+}
+.product-review .review .comment-review .comment .sub-comment {
+  padding-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+.product-review .review .comment-review .comment .sub-comment .box-ava {
+  width: 24px;
+  height: 24px;
+}
+.product-review .review .comment-review .comment .sub-comment .box-ava img {
+  vertical-align: middle;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.product-review .review .comment-review .comment .sub-comment .comment-reply {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background: #FAFAFA;
+}
+.product-review .review .comment-review .comment .sub-comment .comment-reply .customer-name {
+  color: #263238;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.product-review .review .comment-review .comment .sub-comment .comment-reply .comment-content {
+  color: #263238;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 8px;
+}
+.product-review .view-all-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+.product-review .view-all-review .quantity {
+  color: #0C8441;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+}
+.product-review .view-all-review img {
+  width: 16px;
+  height: 16px;
+}
+
+body {
+  margin: unset;
+  background: #ECEFF1;
+}
+body .container-page {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: auto;
+  position: relative;
+}
+body .container-page .list-action {
+  position: fixed;
+  z-index: 6;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  background: #FFF;
+}
+body .container-page .list-action .basic-action {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 8px 4px;
+}
+body .container-page .list-action .basic-action img {
+  width: 24px;
+  height: 24px;
+}
+body .container-page .list-action .basic-action .label {
+  color: #263238;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  white-space: nowrap;
+}
+body .container-page .list-action .dash {
+  background: #F06292;
+  width: 0.5px;
+  height: 28px;
+}
+body .container-page .list-action .buy-with-voucher {
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  background: #F06292;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+body a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main-product.css.map */

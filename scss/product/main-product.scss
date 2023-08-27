@@ -1,0 +1,82 @@
+@import "../variables";
+@import "photo-product";
+@import "product-information";
+@import "product-suggestion";
+@import "product-rating";
+
+body {
+  margin: unset;
+  background: $background-common;
+
+  .container-page {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: auto;
+    position: relative;
+
+    .list-action {
+      position: fixed;
+      z-index: 6;
+      bottom: 0;
+      width: 100%;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      background: $white;
+
+      .basic-action {
+        //width: 59px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 $distance-common*2px $distance-common*1px;
+
+        img{
+          width: 24px;
+          height: 24px;
+        }
+
+        .label{
+          color: $ink-900;
+          text-align: center;
+          font-family: $font-family-common;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: $font-weight-normal;
+          line-height: 14px;
+          white-space: nowrap;
+        }
+      }
+
+      .dash{
+        background: $primary-b-300;
+        width: 0.5px;
+        height: 28px;
+      }
+
+      .buy-with-voucher{
+        color: $white;
+        text-align: center;
+        font-family: $font-family-common;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $font-weight-boldest;
+        line-height: 20px;
+        background: $primary-b-300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

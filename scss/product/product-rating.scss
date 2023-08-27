@@ -1,0 +1,312 @@
+.product-review {
+  background: $white;
+
+  .product-rating {
+    padding: $distance-common*3px $distance-common*1px 0 $distance-common*3px;
+    display: flex;
+    flex-direction: column;
+
+    .rating-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .label {
+        color: $ink-900;
+        font-family: $font-family-common;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $font-weight-bold;
+        line-height: 20px;
+      }
+
+      .rating {
+        display: flex;
+        gap: $distance-common*1px;
+
+        .list-star {
+          height: calc($ratingSize / 5);
+          position: relative;
+          width: $ratingSize;
+
+          &:before {
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEPSURBVHgBbVA9bsIwFH4vJVLG9AQle6WUuRs36AmaI3ADfIPmBi036MbY9gRU6oA6IJfJgDpkKUpc48dzEhABP8my/f2899kAntpsfh+VWgsfhz5wtVpLRIy32zBJkuvilAvOxUqpjAj61kIcRXp0MUFKGROFN4gwCAJ0ewZA/ZYuiGxuLS4Z+wEwn7hYyBF3fGKWuhHJl/i1Rubzb8GmsU/JbyEu3vC9LP8ejsRs9iUYHLf6ExM50yRNb7POo4vC5FpXoPU/rwqbsyZ3ryr9fND1jodeead105TjcdcmUUsPeH10DMaYlJyyzg05wBX/0K7+YobSiwk81hEvYRiJ4fB+6bDp9G0SBDvRmuraA+YEf8/MDsN6AAAAAElFTkSuQmCC") !important;
+            background-repeat: repeat-x;
+            background-size: calc($ratingSize / 5);
+            bottom: 0;
+            content: "";
+            display: block;
+            height: calc($ratingSize / 5);
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: $ratingSize;
+          }
+
+          > span {
+            display: block;
+            text-indent: -10000px;
+            width: $ratingSize;
+            height: calc($ratingSize / 5);
+            position: absolute;
+            overflow: hidden;
+
+            &:before {
+              background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAELSURBVHgBhVA9TsMwFP5eUhiQEBEDYqMDA1vVEzRwAzhBF/beoOEIHAAVLsDGxNCIA6AgRga4AR3K0Njx46sTLJVGrS1b9vfj5/cBLUM/zgZc0zYuagOxsBkWVarvp+lWg752BzSkKC1g7Pg/LzpNEuztnsDu9CFywDUi3q3Z5QvuHhXeoFLAzgvRl+MhLxMySrFAsWkU4r/xfJRxb8rTiIh4cGpT6xOd+EIC+nRIE8Ze7+uIBL/wO6U7l8vZTFYaftz/Jpl4Ud2DclLjhnL187CSkk7YvKkSJgSfUFkt45X6jP56rPG8F8TG5TBmRNOXx0zZ+5N1gsHaBC7OmdiNXNu8QW/1LsqIBcMvDp90Z6nSYMkAAAAASUVORK5CYII=") !important;
+              background-repeat: repeat-x;
+              background-size: calc($ratingSize / 5);
+              bottom: 0;
+              content: "";
+              display: block;
+              height: calc($ratingSize / 5);
+              left: 0;
+              position: absolute;
+              right: 0;
+              text-indent: 10000px;
+              top: 0;
+            }
+          }
+        }
+
+        .rating-point {
+          color: $primary-text;
+          font-family: $font-family-common;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: $font-weight-bold;
+          line-height: 20px;
+        }
+
+        .rating-num {
+          color: $gray-5;
+          font-family: $font-family-common;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: $font-weight-bold;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .image-review {
+      display: flex;
+      gap: $distance-common*2px;
+      padding: $distance-common*5px 0 $distance-common*4px;
+      border-bottom: solid $ink-300 0.5px;
+
+      .box-photo {
+        border-radius: 6px;
+        border: 1px solid $gray-6;
+        background: $gray-6;
+        width: 70.698px;
+        height: 80px;
+        position: relative;
+
+        .overlay {
+          width: 70.698px;
+          height: 80px;
+          position: absolute;
+          z-index: 5;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 6px;
+          background: rgba(0, 0, 0, 0.85);
+
+          .number-more {
+            color: $white;
+            text-align: center;
+            font-family: $font-family-common;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: $font-weight-normal;
+            line-height: 14px;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          vertical-align: middle;
+          display: block;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+
+  .review{
+    padding: $distance-common*3px $distance-common*3px 0;
+    display: flex;
+    flex-direction: column;
+    gap: $distance-common*2px;
+
+    .comment-review{
+      display: flex;
+      gap: $distance-common*2px;
+
+      .box-avatar{
+        width: 32px;
+        height: 32px;
+
+        img{
+          vertical-align: middle;
+          //width: 100%;
+          height: 100%;
+          display: block;
+          object-fit: cover;
+          border-radius: 32px;
+        }
+      }
+
+      .comment{
+        width: 100%;
+        .comment-primary{
+          padding: $distance-common*2px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 4px;
+          background: $Black50;
+
+          .customer-name{
+            color: $ink-900;
+            font-family: $font-family-common;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: $font-weight-bold;
+            line-height: 20px;
+          }
+          .comment-content{
+            color: $ink-900;
+            font-family: $font-family-common;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: $font-weight-normal;
+            line-height: normal;
+            margin-top: $distance-common*2px;
+          }
+          .list-photo{
+            margin-top: $distance-common*2px;
+            display: flex;
+            gap: $distance-common*2px;
+
+            .box-photo {
+              border: 1px solid $gray-6;
+              background: $gray-6;
+              width: 74px;
+              height: 74px;
+              position: relative;
+
+              .overlay {
+                width: 74px;
+                height: 74px;
+                position: absolute;
+                z-index: 5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 0, 0, 0.85);
+
+                .number-more {
+                  color: $white;
+                  text-align: center;
+                  font-family: $font-family-common;
+                  font-size: 10px;
+                  font-style: normal;
+                  font-weight: $font-weight-normal;
+                  line-height: 14px;
+                }
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                vertical-align: middle;
+                display: block;
+              }
+            }
+          }
+        }
+        .time{
+          color: $ink-400;
+          font-family: $font-family-common;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: $font-weight-normal;
+          line-height: normal;
+          padding-left: $distance-common*2px;
+        }
+        .sub-comment{
+          padding-top: $distance-common*4px;
+          display: flex;
+          gap: $distance-common*2px;
+
+          .box-ava{
+            width: 24px;
+            height: 24px;
+
+            img{
+              vertical-align: middle;
+              //width: 100%;
+              height: 100%;
+              display: block;
+              object-fit: cover;
+              border-radius: 24px;
+            }
+          }
+
+          .comment-reply{
+            padding: $distance-common*2px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 4px;
+            background: $Black50;
+
+            .customer-name{
+              color: $ink-900;
+              font-family: $font-family-common;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: $font-weight-bold;
+              line-height: 20px;
+            }
+            .comment-content{
+              color: $ink-900;
+              font-family: $font-family-common;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: $font-weight-normal;
+              line-height: normal;
+              margin-top: $distance-common*2px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .view-all-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $distance-common*3px 0;
+
+    .quantity{
+      color: $green-1;
+      text-align: center;
+      font-family: $font-family-common;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: $font-weight-bolder;
+      line-height: 14px;
+    }
+    img{
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
