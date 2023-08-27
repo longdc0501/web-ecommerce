@@ -1,11 +1,16 @@
 //variables
-$percent-sold: 70;
+$percent-sold:                                      70;
+$percent-5star:                                     100;
+$percent-4star:                                     90;
+$percent-3star:                                     20;
+$percent-2star:                                     30;
+$percent-1star:                                     0;
 
-$distance-common: 4;
+$distance-common:                                   4;
 
-$ratingSize: 80px;
+$ratingSize:                                        80px;
 
-$default-transitions: transform 0.5s, border-radius 0.5s;
+$default-transitions:                               transform 0.5s, border-radius 0.5s;
 
 //colors
 $Black50:                                           #FAFAFA !default;
@@ -19,12 +24,15 @@ $red-bold:                                          #F44336 !default;
 $orange-500:                                        #FF5722 !default;
 $orange-100:                                        #FFCCBC !default;
 $yellow-label:                                      #FFC062 !default;
+$yellow-1:                                          #FFAB00 !default;
+$yellow-2:                                          #FFC400 !default;
 $primary-text:                                      #000 !default;
 $black1:                                            #181717 !default;
 $black-900:                                         #212121 !default;
 $ink-900:                                           #263238 !default;
 $divider:                                           #333 !default;
 $text:                                              #172B4D !default;
+$blue-1:                                            #2F80ED !default;
 $link:                                              #2196F3 !default;
 $placeholder-color:                                 #6B778C !default;
 $ink-400:                                           #78909C !default;
@@ -34,6 +42,9 @@ $gray-4:                                            #BDBDBD !default;
 $gray-5:                                            #AFAFAF !default;
 $gray-6:                                            #C4C4C4 !default;
 $gray-7:                                            #EBEAED !default;
+$gray-8:                                            #F4F5F7 !default;
+$gray-9:                                            #EBECF0 !default;
+$gray-10:                                           #F2F2F2 !default;
 $green-1:                                           #0C8441 !default;
 $green-2:                                           #5FAF3A !default;
 
