@@ -1318,8 +1318,59 @@
 .content-pick .list-size .group-scroll .select-size .list-filter .active-filter {
   background: #F06292 !important;
 }
+.content-pick .pick-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 20px;
+}
+.content-pick .pick-quantity .label-quantity {
+  color: #000;
+  font-family: 4;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.content-pick .pick-quantity .box-pick {
+  display: flex;
+  align-items: center;
+}
+.content-pick .pick-quantity .box-pick .action {
+  border: solid 1px #EBEAED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+}
+.content-pick .pick-quantity .box-pick .action img {
+  width: 12px;
+}
+.content-pick .pick-quantity .box-pick .number {
+  border-bottom: solid 1px #EBEAED;
+  border-top: solid 1px #EBEAED;
+  color: #172B4D;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-pick .pick-quantity .box-pick .minus {
+  border-radius: 12px 0 0 12px;
+}
+.content-pick .pick-quantity .box-pick .add {
+  border-radius: 0 12px 12px 0;
+}
 .content-pick .submit {
-  margin: 0 12px;
+  margin: 0 20px;
   height: 48px;
   background: #F06292;
   display: flex;
