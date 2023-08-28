@@ -913,6 +913,7 @@
   flex-direction: column;
   border-radius: 4px;
   background: #FAFAFA;
+  width: 100%;
 }
 .product-review .review .comment-review .comment .sub-comment .comment-reply .customer-name {
   color: #263238;
