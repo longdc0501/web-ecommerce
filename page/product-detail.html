@@ -307,7 +307,7 @@
             <div class="label">Tư vấn</div>
         </div>
         <div class="dash"></div>
-        <div class="basic-action">
+        <div class="basic-action" id="pick-product">
             <img src="../assets/image/icon/shopping-cart-03.svg" alt="shopping-cart">
             <div class="label">Thêm vào giỏ hàng</div>
         </div>
@@ -375,9 +375,81 @@
             </main>
         </div>
     </div>
+
+    <!-- The sheet gift component -->
+    <div id="sheet-pick-product" class="column items-center justify-end" aria-hidden="true">
+        <!-- Dark background for the sheet -->
+        <div class="overlay-pick"></div>
+        <!-- The sheet itself -->
+        <div class="contents-pick-product column">
+            <!-- Sheet controls -->
+            <header class="controls">
+                <!-- The thing to drag if you want to resize the sheet -->
+<!--                <div class="draggable-area">-->
+<!--                    <div class="draggable-thumb"></div>-->
+<!--                </div>-->
+                <!-- Button to close the sheet -->
+<!--                <button class="close-sheet-pick" type="button" title="Close the sheet">&times;</button>-->
+                <div class="close-sheet-pick">
+                    <img src="../assets/image/icon/x-circle.svg" alt="close">
+                </div>
+            </header>
+
+            <!-- Body of the sheet -->
+            <main class="body fill column">
+                <div class="content-pick">
+                    <div class="box-product">
+                        <div class="box-ava">
+                            <img src="../assets/image/product/photo-product.png" alt="product">
+                        </div>
+                        <div class="info-product">
+                            <div class="name">Kem dưỡng phục hồi & dưỡng
+                                sáng da Lagumi Calendula B5 ch...</div>
+                            <div class="price">
+                                <div class="saleprice">290.000đ</div>
+                                <div class="cost">350.000 đ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-size">
+                        <div class="group-scroll">
+                            <div class="select-size">
+                                <div class="label-size">Size</div>
+                                <div class="list-filter">
+                                    <div class="item-filter">XXL</div>
+                                    <div class="item-filter">XXL</div>
+                                    <div class="item-filter">L</div>
+                                    <div class="item-filter active-filter">M</div>
+                                </div>
+                            </div>
+                            <div class="select-size">
+                                <div class="label-size">Size</div>
+                                <div class="list-filter">
+                                    <div class="item-filter">XXL</div>
+                                    <div class="item-filter">XXL</div>
+                                    <div class="item-filter">L</div>
+                                    <div class="item-filter active-filter">M</div>
+                                    <div class="item-filter active-filter">S</div>
+                                    <div class="item-filter active-filter">XS</div>
+                                </div>
+                            </div>
+                            <div class="select-size">
+                                <div class="label-size">Size</div>
+                                <div class="list-filter">
+                                    <div class="item-filter">Hồng</div>
+                                    <div class="item-filter">Xanh</div>
+                                    <div class="item-filter">Đỏ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit" id="submit-pick">OK</div>
+                </div>
+            </main>
+        </div>
+    </div>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<!--<script src="../js/list-voucher.js"></script>-->
-<script src="../js/product/list-gift.js"></script>
+<script src="../js/product/bottom-sheet.js"></script>
 </html>
