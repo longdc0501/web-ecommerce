@@ -1,144 +1,135 @@
-@import "../variables";
+#preview-photo{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background: $primary-text;
+  visibility: Hidden;
 
-body {
-  margin: unset;
-  background: $background-common;
+  img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
 
-  .container-photo-preview {
-    max-width: 768px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    position: relative;
-    height: 100vh;
-    background: $primary-text;
+  .action-close {
+    position: absolute;
+    z-index: 2;
+    top: 43px;
+    left: 16px;
 
     img {
-      vertical-align: middle;
-      border-style: none;
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: contain;
+      width: 24px;
+      height: 24px;
     }
+  }
 
-    .action-close {
-      position: absolute;
-      z-index: 2;
-      top: 43px;
-      left: 16px;
+  .comment-box {
+    display: flex;
+    flex-direction: column;
+    gap: $distance-common*3px;
+    padding: $distance-common*3px $distance-common*4px;
+    height: 172px;
+    background: $primary-text;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
 
-      img {
-        width: 24px;
-        height: 24px;
-      }
-    }
-
-    .comment-box {
+    .box-customer {
       display: flex;
-      flex-direction: column;
-      gap: $distance-common*3px;
-      padding: $distance-common*3px $distance-common*4px;
-      height: 172px;
-      background: $primary-text;
-      opacity: 0.8;
-      position: absolute;
-      bottom: 0;
+      justify-content: space-between;
 
-      .box-customer {
+      .name-and-rate {
         display: flex;
-        justify-content: space-between;
+        gap: $distance-common*2px;
+        align-items: center;
 
-        .name-and-rate {
-          display: flex;
-          gap: $distance-common*2px;
-          align-items: center;
-
-          .name {
-            color: $white;
-            font-family: $font-family-Label;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: $font-weight-bolder;
-            line-height: 18px;
-          }
-
-          .rate {
-            display: flex;
-            background: $yellow-2;
-            border-radius: 9px;
-            padding: 0 $distance-common*1px;
-            align-items: center;
-
-            .point-rate {
-              color: $white;
-              text-align: center;
-              font-family: $font-family-Label;
-              font-size: 10px;
-              font-style: normal;
-              font-weight: $font-weight-bolder;
-              line-height: normal;
-            }
-
-            img {
-              width: 16px;
-            }
-          }
+        .name {
+          color: $white;
+          font-family: $font-family-Label;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: $font-weight-bolder;
+          line-height: 18px;
         }
 
-        .box-time {
+        .rate {
           display: flex;
+          background: $yellow-2;
+          border-radius: 9px;
+          padding: 0 $distance-common*1px;
           align-items: center;
+
+          .point-rate {
+            color: $white;
+            text-align: center;
+            font-family: $font-family-Label;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: $font-weight-bolder;
+            line-height: normal;
+          }
 
           img {
             width: 16px;
           }
-
-          .time {
-            color: $placeholder-color;
-            font-family: $font-family-Label;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: $font-weight-normal;
-            line-height: normal;
-            white-space: nowrap;
-          }
         }
       }
 
-      .comment {
-        color: $gray-8;
-        font-family: $font-family-Label;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: $font-weight-normal;
-        line-height: 21px;
-      }
-
-      .sub-comment {
+      .box-time {
         display: flex;
         align-items: center;
-        gap: $distance-common*3px;
 
         img {
-          width: 19px;
-          height: 19px;
+          width: 16px;
         }
 
-        .reply-comment {
-          color: $blue-3;
+        .time {
+          color: $placeholder-color;
           font-family: $font-family-Label;
-          font-size: 14px;
+          font-size: 12px;
           font-style: normal;
           font-weight: $font-weight-normal;
           line-height: normal;
+          white-space: nowrap;
         }
       }
     }
 
-  }
+    .comment {
+      color: $gray-8;
+      font-family: $font-family-Label;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: $font-weight-normal;
+      line-height: 21px;
+    }
 
-  a {
-    text-decoration: none;
+    .sub-comment {
+      display: flex;
+      align-items: center;
+      gap: $distance-common*3px;
+
+      img {
+        width: 19px;
+        height: 19px;
+      }
+
+      .reply-comment {
+        color: $blue-3;
+        font-family: $font-family-Label;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: $font-weight-normal;
+        line-height: normal;
+      }
+    }
   }
 }

@@ -27,13 +27,36 @@
                 <img src="../assets/image/icon/shopping-cart.svg" alt="cart-icon" class="icon-function">
             </div>
         </a>
-        <img src="../assets/image/product/photo-product.png" alt="photo-product">
+        <div class="swiper swiper-photo">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="../assets/image/product/photo-product.png" alt="photo-product">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="../assets/image/product/whathot.png" alt="photo-product">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="../assets/image/product/photo-product2.png" alt="photo-product">
+                    </a>
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <!--            <div class="swiper-pagination"></div>-->
+        </div>
         <div class="super-discount-container">
             <div class="discount-content">
                 <div class="content">Siêu sale 8.8</div>
                 <div class="discount-time">
                     <div class="label">Còn</div>
-                    <div class="countdown">09:00:00</div>
+                    <div class="countdown" id="countdown"></div>
                 </div>
             </div>
         </div>
@@ -143,15 +166,15 @@
                 </div>
             </div>
             <div class="image-review">
-                <a href="photo-peview.html" class="box-photo">
-                    <img src="../assets/image/product/review-product.png" alt="review-product">
-                </a>
-                <a href="photo-peview.html" class="box-photo">
-                    <img src="../assets/image/product/review-product1.png" alt="review-product">
-                </a>
-                <a href="photo-peview.html" class="box-photo">
-                    <img src="../assets/image/product/review-product.png" alt="review-product">
-                </a>
+                <div class="box-photo">
+                    <img onclick="previewPhoto(this.src)" src="../assets/image/product/review-product.png" alt="review-product">
+                </div>
+                <div class="box-photo">
+                    <img onclick="previewPhoto(this.src)" src="../assets/image/product/review-product1.png" alt="review-product">
+                </div>
+                <div class="box-photo">
+                    <img onclick="previewPhoto(this.src)" src="../assets/image/product/review-product.png" alt="review-product">
+                </div>
                 <div class="box-photo">
                     <a href="photo-review.html" class="overlay">
                         <div class="number-more">+100</div>
@@ -170,16 +193,17 @@
                         <div class="customer-name">Tiểu Hý</div>
                         <div class="comment-content">Các Mom nên thử dùng đi Các Mom
                             nên thử dùng đi ạ.đến bây giờ e mới tìm thấy chân ái.sau
-                            khi tìm hiểu và dùng nhiều loại.tinh chất tự nhiên nên rất yên tâm</div>
+                            khi tìm hiểu và dùng nhiều loại.tinh chất tự nhiên nên rất yên tâm
+                        </div>
                         <div class="list-photo">
-                            <a href="photo-peview.html" class="box-photo">
-                                <img src="../assets/image/product/review-product1.png" alt="review-product">
-                            </a>
-                            <a href="photo-peview.html" class="box-photo">
-                                <img src="../assets/image/product/review-product.png" alt="review-product">
-                            </a>
                             <div class="box-photo">
-                                <a  href="photo-review.html" class="overlay">
+                                <img onclick="previewPhoto(this.src)" src="../assets/image/product/review-product1.png" alt="review-product">
+                            </div>
+                            <div class="box-photo">
+                                <img onclick="previewPhoto(this.src)" src="../assets/image/product/review-product.png" alt="review-product">
+                            </div>
+                            <div class="box-photo">
+                                <a href="photo-review.html" class="overlay">
                                     <div class="number-more">+2</div>
                                 </a>
                                 <img src="../assets/image/product/review-product2.png" alt="review-product">
@@ -187,16 +211,16 @@
                         </div>
                     </div>
                     <div class="time">8 giờ</div>
-<!--                    <div class="sub-comment">-->
-<!--                        <div class="box-ava">-->
-<!--                            <img src="../assets/image/avatar/avatar2.png" alt="avatar">-->
-<!--                        </div>-->
-<!--                        <div class="comment-reply">-->
-<!--                             <div class="customer-name">Bibabo Shop</div>-->
-<!--                            <div class="comment-content">Cảm ơn mon đã tin tưởng ủng hộ-->
-<!--                                Bibabo. Chúc mon mạnh khỏe</div>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <!--                    <div class="sub-comment">-->
+                    <!--                        <div class="box-ava">-->
+                    <!--                            <img src="../assets/image/avatar/avatar2.png" alt="avatar">-->
+                    <!--                        </div>-->
+                    <!--                        <div class="comment-reply">-->
+                    <!--                             <div class="customer-name">Bibabo Shop</div>-->
+                    <!--                            <div class="comment-content">Cảm ơn mon đã tin tưởng ủng hộ-->
+                    <!--                                Bibabo. Chúc mon mạnh khỏe</div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
                 </div>
             </div>
             <div class="comment-review">
@@ -207,21 +231,22 @@
                     <div class="comment-primary">
                         <div class="customer-name">Kiều Anh</div>
                         <div class="comment-content">Sp dùng rất hiệu quả mk dùng
-                            chai này là chai t3 rùi</div>
-<!--                        <div class="list-photo">-->
-<!--                            <div class="box-photo">-->
-<!--                                <img src="../assets/image/product/review-product1.png" alt="review-product">-->
-<!--                            </div>-->
-<!--                            <div class="box-photo">-->
-<!--                                <img src="../assets/image/product/review-product.png" alt="review-product">-->
-<!--                            </div>-->
-<!--                            <div class="box-photo">-->
-<!--                                <div class="overlay">-->
-<!--                                    <div class="number-more">+2</div>-->
-<!--                                </div>-->
-<!--                                <img src="../assets/image/product/review-product2.png" alt="review-product">-->
-<!--                            </div>-->
-<!--                        </div>-->
+                            chai này là chai t3 rùi
+                        </div>
+                        <!--                        <div class="list-photo">-->
+                        <!--                            <div class="box-photo">-->
+                        <!--                                <img src="../assets/image/product/review-product1.png" alt="review-product">-->
+                        <!--                            </div>-->
+                        <!--                            <div class="box-photo">-->
+                        <!--                                <img src="../assets/image/product/review-product.png" alt="review-product">-->
+                        <!--                            </div>-->
+                        <!--                            <div class="box-photo">-->
+                        <!--                                <div class="overlay">-->
+                        <!--                                    <div class="number-more">+2</div>-->
+                        <!--                                </div>-->
+                        <!--                                <img src="../assets/image/product/review-product2.png" alt="review-product">-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
                     </div>
                     <div class="time">8 giờ</div>
                     <div class="sub-comment">
@@ -229,9 +254,10 @@
                             <img src="../assets/image/avatar/avatar2.png" alt="avatar">
                         </div>
                         <div class="comment-reply">
-                             <div class="customer-name">Bibabo Shop</div>
+                            <div class="customer-name">Bibabo Shop</div>
                             <div class="comment-content">Cảm ơn mon đã tin tưởng ủng hộ
-                                Bibabo. Chúc mon mạnh khỏe</div>
+                                Bibabo. Chúc mon mạnh khỏe
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -322,14 +348,14 @@
         <!-- The sheet itself -->
         <div class="contents column">
             <!-- Sheet controls -->
-<!--            <header class="controls">-->
-<!--                &lt;!&ndash; The thing to drag if you want to resize the sheet &ndash;&gt;-->
-<!--                <div class="draggable-area">-->
-<!--                    <div class="draggable-thumb"></div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; Button to close the sheet &ndash;&gt;-->
-<!--                <button class="close-sheet" type="button" title="Close the sheet">&times;</button>-->
-<!--            </header>-->
+            <!--            <header class="controls">-->
+            <!--                &lt;!&ndash; The thing to drag if you want to resize the sheet &ndash;&gt;-->
+            <!--                <div class="draggable-area">-->
+            <!--                    <div class="draggable-thumb"></div>-->
+            <!--                </div>-->
+            <!--                &lt;!&ndash; Button to close the sheet &ndash;&gt;-->
+            <!--                <button class="close-sheet" type="button" title="Close the sheet">&times;</button>-->
+            <!--            </header>-->
 
             <!-- Body of the sheet -->
             <main class="body fill column">
@@ -375,7 +401,6 @@
             </main>
         </div>
     </div>
-
     <!-- The sheet gift component -->
     <div id="sheet-pick-product" class="column items-center justify-end" aria-hidden="true">
         <!-- Dark background for the sheet -->
@@ -385,11 +410,11 @@
             <!-- Sheet controls -->
             <header class="controls">
                 <!-- The thing to drag if you want to resize the sheet -->
-<!--                <div class="draggable-area">-->
-<!--                    <div class="draggable-thumb"></div>-->
-<!--                </div>-->
+                <!--                <div class="draggable-area">-->
+                <!--                    <div class="draggable-thumb"></div>-->
+                <!--                </div>-->
                 <!-- Button to close the sheet -->
-<!--                <button class="close-sheet-pick" type="button" title="Close the sheet">&times;</button>-->
+                <!--                <button class="close-sheet-pick" type="button" title="Close the sheet">&times;</button>-->
                 <div class="close-sheet-pick">
                     <img src="../assets/image/icon/x-circle.svg" alt="close">
                 </div>
@@ -404,7 +429,8 @@
                         </div>
                         <div class="info-product">
                             <div class="name">Kem dưỡng phục hồi & dưỡng
-                                sáng da Lagumi Calendula B5 ch...</div>
+                                sáng da Lagumi Calendula B5 ch...
+                            </div>
                             <div class="price">
                                 <div class="saleprice">290.000đ</div>
                                 <div class="cost">350.000 đ</div>
@@ -455,13 +481,54 @@
                             </div>
                         </div>
                     </div>
-                    <div class="submit" id="submit-pick">OK</div>
+                    <div class="submit" id="submit-pick" onclick="addToCart()" >OK</div>
                 </div>
             </main>
+        </div>
+    </div>
+    <!-- End sheet component -->
+
+    <!-- toast message-->
+    <div id="snackbar">
+        <img src="../assets/image/icon/check-white.svg" alt="check">
+        <div class="label-added">Đã thêm vào giỏ hàng</div>
+    </div>
+    <!-- end toast message-->
+
+    <div id="preview-photo">
+        <div class="action-close" onclick="closePreview()">
+            <img src="../assets/image/icon/ic_close.svg" alt="close">
+        </div>
+        <img id="photo-pre" src="../assets/image/product/photo-product2.png" alt="photo-product">
+        <div class="comment-box">
+            <div class="box-customer">
+                <div class="name-and-rate">
+                    <div class="name">Ngọc xinh</div>
+                    <div class="rate">
+                        <div class="point-rate">5</div>
+                        <img src="../assets/image/icon/star-white.svg" alt="star">
+                    </div>
+                </div>
+                <div class="box-time">
+                    <img src="../assets/image/icon/time.svg" alt="time">
+                    <div class="time">2 giờ</div>
+                </div>
+            </div>
+            <div class="comment">Mình vs bà chị cùng mua đồ.
+                Ngồi đợi ib cả call đt ngóc mỏ cả mấy ngày.
+                Đến khi chị chuyển tiền rồi thì bảo hết hàng.
+                Dư tiền luôn cũng ko nói đc 1 tiếng. Đồ đẹp thì
+                đẹp thật, nhưng mất khách ngay từ cách phục vụ.</div>
+            <div class="sub-comment">
+                <img src="../assets/image/icon/message.svg" alt="message">
+                <div class="reply-comment">24 thảo luận</div>
+            </div>
         </div>
     </div>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="../js/product/bottom-sheet.js"></script>
+<script src="../js/product/photo-product-detail.js"></script>
+<script src="../js/common/toast-message.js"></script>
 </html>
