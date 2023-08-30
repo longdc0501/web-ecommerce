@@ -12,7 +12,7 @@ body .container-review-product {
 body .container-review-product .header {
   background: #FFF;
   position: fixed;
-  z-index: 2;
+  z-index: 80;
   top: 0;
   width: 100%;
   max-width: 768px;
@@ -377,6 +377,47 @@ body .container-review-product .review-page .comment-component .comment-and-phot
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+body .container-review-product .review-page .comment-component .comment-and-photo .sub-comment-show {
+  padding-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+body .container-review-product .review-page .comment-component .comment-and-photo .sub-comment-show .box-ava {
+  width: 24px;
+  height: 24px;
+}
+body .container-review-product .review-page .comment-component .comment-and-photo .sub-comment-show .box-ava img {
+  vertical-align: middle;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 24px;
+}
+body .container-review-product .review-page .comment-component .comment-and-photo .sub-comment-show .comment-reply {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background: #FAFAFA;
+  width: 100%;
+}
+body .container-review-product .review-page .comment-component .comment-and-photo .sub-comment-show .comment-reply .customer-name {
+  color: #263238;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+body .container-review-product .review-page .comment-component .comment-and-photo .sub-comment-show .comment-reply .comment-content {
+  color: #263238;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 8px;
 }
 body a {
   text-decoration: none;

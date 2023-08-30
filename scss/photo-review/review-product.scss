@@ -14,7 +14,7 @@ body {
     .header {
       background: $white;
       position: fixed;
-      z-index: 2;
+      z-index: 80;
       top: 0;
       width: 100%;
       max-width: 768px;
@@ -432,6 +432,54 @@ body {
               font-weight: $font-weight-normal;
               line-height: normal;
             }
+          }
+
+          .sub-comment-show{
+            padding-top: $distance-common*4px;
+            display: flex;
+            gap: $distance-common*2px;
+
+            .box-ava{
+              width: 24px;
+              height: 24px;
+
+              img{
+                vertical-align: middle;
+                //width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover;
+                border-radius: 24px;
+              }
+            }
+
+            .comment-reply{
+              padding: $distance-common*2px;
+              display: flex;
+              flex-direction: column;
+              border-radius: 4px;
+              background: $Black50;
+              width: 100%;
+
+              .customer-name{
+                color: $ink-900;
+                font-family: $font-family-common;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: $font-weight-bold;
+                line-height: 20px;
+              }
+              .comment-content{
+                color: $ink-900;
+                font-family: $font-family-common;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: $font-weight-normal;
+                line-height: normal;
+                margin-top: $distance-common*2px;
+              }
+            }
+
           }
         }
       }

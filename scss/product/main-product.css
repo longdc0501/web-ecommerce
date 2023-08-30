@@ -1005,7 +1005,7 @@
   right: 0;
   width: 3rem;
   margin: auto;
-  padding: 1rem;
+  padding: 4px;
   cursor: grab;
 }
 #sheet-gift .contents .draggable-area .draggable-thumb {
@@ -1187,7 +1187,7 @@
   right: 0;
   width: 3rem;
   margin: auto;
-  padding: 1rem;
+  padding: 4px;
   cursor: grab;
 }
 #sheet-pick-product .contents-pick-product .draggable-area .draggable-thumb {
@@ -1287,8 +1287,6 @@
   padding: 20px;
 }
 .content-pick .list-size .group-scroll {
-  height: 200px;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 34px;
@@ -1579,6 +1577,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  height: 100%;
+  overflow-y: scroll;
 }
 #preview-photo .comment-box .sub-comment {
   display: flex;

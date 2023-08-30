@@ -50,7 +50,8 @@
       right: 0;
       width: 3rem;
       margin: auto;
-      padding: 1rem;
+      //padding: 1rem;
+      padding: $distance-common*1px;
       cursor: grab;
 
       .draggable-thumb {

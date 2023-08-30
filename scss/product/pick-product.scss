@@ -50,7 +50,7 @@
       right: 0;
       width: 3rem;
       margin: auto;
-      padding: 1rem;
+      padding: $distance-common*1px;
       cursor: grab;
 
       .draggable-thumb {
@@ -170,8 +170,8 @@
     padding: $distance-common*5px;
 
     .group-scroll {
-      height: 200px;
-      overflow-y: auto;
+      //height: 200px;
+      //overflow-y: auto;
       display: flex;
       flex-direction: column;
       gap: 34px;

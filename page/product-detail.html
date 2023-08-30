@@ -348,15 +348,14 @@
         <!-- The sheet itself -->
         <div class="contents column">
             <!-- Sheet controls -->
-            <!--            <header class="controls">-->
-            <!--                &lt;!&ndash; The thing to drag if you want to resize the sheet &ndash;&gt;-->
-            <!--                <div class="draggable-area">-->
-            <!--                    <div class="draggable-thumb"></div>-->
-            <!--                </div>-->
+                        <header class="controls">
+                            <!-- The thing to drag if you want to resize the sheet -->
+<!--                            <div class="draggable-area">-->
+<!--                                <div class="draggable-thumb"></div>-->
+<!--                            </div>-->
             <!--                &lt;!&ndash; Button to close the sheet &ndash;&gt;-->
             <!--                <button class="close-sheet" type="button" title="Close the sheet">&times;</button>-->
-            <!--            </header>-->
-
+                        </header>
             <!-- Body of the sheet -->
             <main class="body fill column">
                 <div class="content-gift">
@@ -410,9 +409,9 @@
             <!-- Sheet controls -->
             <header class="controls">
                 <!-- The thing to drag if you want to resize the sheet -->
-                <!--                <div class="draggable-area">-->
-                <!--                    <div class="draggable-thumb"></div>-->
-                <!--                </div>-->
+                <div class="draggable-area">
+                    <div class="draggable-thumb"></div>
+                </div>
                 <!-- Button to close the sheet -->
                 <!--                <button class="close-sheet-pick" type="button" title="Close the sheet">&times;</button>-->
                 <div class="close-sheet-pick">
@@ -442,29 +441,29 @@
                             <div class="select-size">
                                 <div class="label-size">Size</div>
                                 <div class="list-filter">
-                                    <div class="item-filter">XXL</div>
-                                    <div class="item-filter">XXL</div>
-                                    <div class="item-filter">L</div>
-                                    <div class="item-filter active-filter">M</div>
+                                    <div class="item-filter" onclick="chooseProduct(this)">XXL</div>
+                                    <div class="item-filter" onclick="chooseProduct(this)">XXL</div>
+                                    <div class="item-filter" onclick="chooseProduct(this)">L</div>
+                                    <div class="item-filter active-filter" onclick="chooseProduct(this)">M</div>
                                 </div>
                             </div>
                             <div class="select-size">
                                 <div class="label-size">Size</div>
                                 <div class="list-filter">
-                                    <div class="item-filter">XXL</div>
-                                    <div class="item-filter">XXL</div>
-                                    <div class="item-filter">L</div>
-                                    <div class="item-filter active-filter">M</div>
-                                    <div class="item-filter active-filter">S</div>
-                                    <div class="item-filter active-filter">XS</div>
+                                    <div  onclick="chooseProduct(this)" class="item-filter">XXL</div>
+                                    <div  onclick="chooseProduct(this)" class="item-filter">XXL</div>
+                                    <div  onclick="chooseProduct(this)" class="item-filter">L</div>
+                                    <div  onclick="chooseProduct(this)" class="item-filter active-filter">M</div>
+                                    <div  onclick="chooseProduct(this)" class="item-filter active-filter">S</div>
+                                    <div  onclick="chooseProduct(this)" class="item-filter active-filter">XS</div>
                                 </div>
                             </div>
                             <div class="select-size">
                                 <div class="label-size">Size</div>
                                 <div class="list-filter">
-                                    <div class="item-filter">Hồng</div>
-                                    <div class="item-filter">Xanh</div>
-                                    <div class="item-filter">Đỏ</div>
+                                    <div  onclick="chooseProduct(this)" class="item-filter">Hồng</div>
+                                    <div  onclick="chooseProduct(this)" class="item-filter">Xanh</div>
+                                    <div  onclick="chooseProduct(this)" class="item-filter">Đỏ</div>
                                 </div>
                             </div>
                         </div>
@@ -472,11 +471,11 @@
                     <div class="pick-quantity">
                         <div class="label-quantity">Số lượng</div>
                         <div class="box-pick">
-                            <div class="minus action">
+                            <div class="minus action" onclick="changeQuantity(false)">
                                 <img src="../assets/image/icon/minus.svg" alt="minus">
                             </div>
-                            <div class="number">01</div>
-                            <div class="add action">
+                            <div class="number" id="quantity-product">01</div>
+                            <div class="add action" onclick="changeQuantity(true)">
                                 <img src="../assets/image/icon/add.svg" alt="add">
                             </div>
                         </div>
@@ -530,5 +529,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="../js/product/bottom-sheet.js"></script>
 <script src="../js/product/photo-product-detail.js"></script>
+<script src="../js/product/choose-product.js"></script>
 <script src="../js/common/toast-message.js"></script>
 </html>
