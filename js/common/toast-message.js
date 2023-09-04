@@ -9,15 +9,33 @@ function addToCart() {
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
-function previewPhoto(src) {
+function previewPhoto(info) {
     // Get the snackbar DIV
     var x = document.getElementById("preview-photo")
-    var photo = document.getElementById("photo-pre")
+    var listPhoto = document.getElementById("list-swiper-photo")
+    var cmt = document.getElementById("comment-preview")
 
-    console.log(src)
+    let list = info.listPhoto
+    let objActive;
+    for ( let i=0; i < list.length ; i++){
+        if( list[i].active ){
+            objActive = list[i]
+            list.splice(i,1)
+            break;
+        }
+    }
+    if (objActive){
+        list.unshift(objActive)
+        listPhoto.innerHTML = ''
+        for ( let i=0; i < list.length ; i++) {
+            listPhoto.innerHTML += `<div class="swiper-slide"><img src=${list[i].src} alt="photo-product"></div>`
+        }
+    }
+    // console.log(list)
 
-    if (src)
-        photo.src = src
+    if (info.comment)
+        cmt.textContent = info.comment
+
 
     // Add the "show" class to DIV
     x.className = "show-appear";

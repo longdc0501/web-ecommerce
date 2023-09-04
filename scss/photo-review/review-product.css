@@ -377,7 +377,6 @@ body .container-review-product .review-page .comment-component .comment-and-phot
   line-height: normal;
 }
 body .container-review-product .review-page .comment-component .comment-and-photo .sub-comment-show {
-  padding-top: 16px;
   display: flex;
   gap: 8px;
 }
