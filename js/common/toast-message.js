@@ -13,7 +13,13 @@ function previewPhoto(info) {
     // Get the snackbar DIV
     var x = document.getElementById("preview-photo")
     var listPhoto = document.getElementById("list-swiper-photo")
+
+    // info cmt
     var cmt = document.getElementById("comment-preview")
+    var name = document.getElementById("cust-name-preview")
+    var rate = document.getElementById("rate-preview")
+    var time = document.getElementById("time-preview")
+    var reply = document.getElementById("number-reply-cmt")
 
     let list = info.listPhoto
     let objActive;
@@ -35,7 +41,14 @@ function previewPhoto(info) {
 
     if (info.comment)
         cmt.textContent = info.comment
-
+    if (info.custName)
+        name.textContent = info.custName
+    if (info.rateNum)
+        rate.textContent = info.rateNum
+    if (info.timeLeft)
+        time.textContent = info.timeLeft
+    if (info.reply)
+        reply.textContent = info.reply
 
     // Add the "show" class to DIV
     x.className = "show-appear";

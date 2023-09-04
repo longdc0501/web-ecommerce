@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>photo-review</title>
     <link rel="stylesheet" href="../scss/photo-review/photo-review.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +16,7 @@
             <img src="../assets/image/icon/chevron-left-2.svg" alt="back">
         </a>
     </div>
-    <div class="grid-product">
+    <div class="grid-product" id="grid-product">
         <div class="grid-item">
             <img src="../assets/image/product/review-product.png" alt="product">
         </div>
@@ -71,6 +72,55 @@
             <img src="../assets/image/product/review-product1.png" alt="product">
         </div>
     </div>
+
+    <div id="preview-photo">
+        <div class="action-close" onclick="closePreview()">
+            <img src="../assets/image/icon/ic_close.svg" alt="close">
+        </div>
+        <div class="swiper swiper-photo-pre">
+            <div class="swiper-wrapper" id="list-swiper-photo">
+                <!-- Slides -->
+                <!--                <div class="swiper-slide">-->
+                <!--                    <img src="../assets/image/product/photo-product.png" alt="photo-product">-->
+                <!--                </div>-->
+                <!--                <div class="swiper-slide">-->
+                <!--                    <img src="../assets/image/product/whathot.png" alt="photo-product">-->
+                <!--                </div>-->
+                <!--                <div class="swiper-slide">-->
+                <!--                    <img src="../assets/image/product/photo-product2.png" alt="photo-product">-->
+                <!--                </div>-->
+            </div>
+        </div>
+        <!--        <img id="photo-pre" src="../assets/image/product/photo-product2.png" alt="photo-product">-->
+        <div class="comment-box">
+            <div class="box-customer">
+                <div class="name-and-rate">
+                    <div class="name" id="cust-name-preview">Ngọc xinh</div>
+                    <div class="rate">
+                        <div class="point-rate" id="rate-preview">5</div>
+                        <img src="../assets/image/icon/star-white.svg" alt="star">
+                    </div>
+                </div>
+                <div class="box-time">
+                    <img src="../assets/image/icon/time.svg" alt="time">
+                    <div class="time" id="time-preview">2 giờ</div>
+                </div>
+            </div>
+            <div class="comment" id="comment-preview">Mình vs bà chị cùng mua đồ.
+                Ngồi đợi ib cả call đt ngóc mỏ cả mấy ngày.
+                Đến khi chị chuyển tiền rồi thì bảo hết hàng.
+                Dư tiền luôn cũng ko nói đc 1 tiếng. Đồ đẹp thì
+                đẹp thật, nhưng mất khách ngay từ cách phục vụ.
+            </div>
+            <div class="sub-comment">
+                <img src="../assets/image/icon/message.svg" alt="message">
+                <div class="reply-comment" id="number-reply-cmt">24 thảo luận</div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="../js/common/toast-message.js"></script>
+<script src="../js/product/photo-review.js"></script>
 </html>
