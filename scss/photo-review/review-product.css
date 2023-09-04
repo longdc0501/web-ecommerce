@@ -326,7 +326,6 @@ body .container-review-product .review-page .comment-component .comment-and-phot
 }
 body .container-review-product .review-page .comment-component .comment-and-photo .list-photo .box-photo {
   border-radius: 6px;
-  border: 1px solid #C4C4C4;
   background: #C4C4C4;
   width: 72px;
   height: 72px;
@@ -359,7 +358,6 @@ body .container-review-product .review-page .comment-component .comment-and-phot
   vertical-align: middle;
   display: block;
   border-radius: 6px;
-  border: solid 1px #A5ADBB;
 }
 body .container-review-product .review-page .comment-component .comment-and-photo .sub-comment {
   display: flex;
