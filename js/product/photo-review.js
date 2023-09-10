@@ -1,8 +1,18 @@
-var swiperPhotoPreview = new Swiper('.swiper-photo-pre', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true
-});
+var swiperPhotoPreview;
+
+var openSwiper = (initialSlide) => {
+    swiperPhotoPreview = new Swiper('.swiper-photo-pre', {
+        // Optional parameters
+        direction: 'horizontal',
+        initialSlide: initialSlide
+        // loop: true
+    });
+
+    swiperPhotoPreview.on('slideChange', function () {
+        // $('.count').text(this.activeIndex + 1);
+        // console.log(this.activeIndex)
+    });
+}
 
 var getUrlParameter = (name) => {
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');

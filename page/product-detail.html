@@ -167,60 +167,103 @@
             </div>
             <div class="image-review">
                 <div class="box-photo">
-                    <img onclick="previewPhoto({listPhoto:[
-                        {src: '../assets/image/product/photo-product.png',
-                        active: true},
-                        {src: '../assets/image/product/whathot.png',
-                        active: false},
-                        {src: '../assets/image/product/review-product.png',
-                        active: false}], comment: 'Đây là comment truyền từ ngoài vào',
-                        custName: 'Đỗ Hà',
-                        rateNum: 5,
-                        timeLeft: '2 phút',
-                        reply: '20 thảo luận',
-                        custName: 'Đỗ Hà',
-                        rateNum: 5,
-                        timeLeft: '2 phút',
-                        reply: '20 thảo luận'})"
-                         src="../assets/image/product/photo-product.png"
+                    <img onclick="previewPhotoV2(this)"
+                         data-cust-name="Tên 1"
+                         data-rate-num="3"
+                         data-time-left="1 phút"
+                         data-reply="23 thảo luận"
+                         data-text-content="23423434334433434"
+                         src="https://th.bing.com/th/id/R.d92e15a5a970ea0bb1af2de5a7f40b31?rik=tSeooebnB3c0bQ&pid=ImgRaw&r=0"
                          alt="review-product">
                 </div>
                 <div class="box-photo">
-                    <img onclick="previewPhoto({listPhoto:[
-                        {src: '../assets/image/product/photo-product.png',
-                        active: false},
-                        {src: '../assets/image/product/whathot.png',
-                        active: true},
-                        {src: '../assets/image/product/review-product.png',
-                        active: false}], comment: 'Đây là comment truyền từ ngoài vào',
-                        custName: 'Đỗ Hà',
-                        rateNum: 5,
-                        timeLeft: '2 phút',
-                        reply: '20 thảo luận'})"
-                         src="../assets/image/product/whathot.png"
+                    <img onclick="previewPhotoV2(this)"
+                         data-cust-name="Tên 2"
+                         data-rate-num="5"
+                         data-time-left="22 phút"
+                         data-text-content="2323232321 "
+                         data-reply="2 thảo luận"
+                         src="https://haycafe.vn/wp-content/uploads/2022/03/anh-chan-dung-1-800x534.jpg"
                          alt="review-product">
                 </div>
                 <div class="box-photo">
-                    <img onclick="previewPhoto({listPhoto:[
-                        {src: '../assets/image/product/photo-product.png',
-                        active: false},
-                        {src: '../assets/image/product/whathot.png',
-                        active: false},
-                        {src: '../assets/image/product/review-product.png',
-                        active: true}], comment: 'Đây là comment truyền từ ngoài vào',
-                        custName: 'Đỗ Hà',
-                        rateNum: 5,
-                        timeLeft: '2 phút',
-                        reply: '20 thảo luận'})"
-                         src="../assets/image/product/review-product.png"
+                    <img onclick="previewPhotoV2(this)"
+                         data-cust-name="Tên 4"
+                         data-rate-num="4"
+                         data-time-left="10 phút"
+                         data-reply="3 thảo luận"
+                         data-text-content="đây là sản phẩn trên gg"
+                         src="https://i.pinimg.com/originals/f4/90/05/f490052a69d5ca09a7e6aca1d4411112.jpg"
                          alt="review-product">
                 </div>
                 <div class="box-photo">
                     <a href="photo-review.html?typeShow=ALL" class="overlay">
                         <div class="number-more">+100</div>
                     </a>
-                    <img src="../assets/image/product/review-product2.png" alt="review-product">
+                    <img onclick="previewPhotoV2(this)"
+                         data-cust-name="Test Hà"
+                         data-rate-num="3"
+                         data-text-content="abcasd22323asd "
+                         data-time-left="6 phút"
+                         data-reply="99 thảo luận"
+                         src="https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/3-8.png"
+                         alt="review-product">
                 </div>
+<!--                <div class="box-photo">-->
+<!--                    <img onclick="previewPhoto({listPhoto:[-->
+<!--                        {src: '../assets/image/product/photo-product.png',-->
+<!--                        active: true},-->
+<!--                        {src: '../assets/image/product/whathot.png',-->
+<!--                        active: false},-->
+<!--                        {src: '../assets/image/product/review-product.png',-->
+<!--                        active: false}], comment: 'Đây là comment truyền từ ngoài vào',-->
+<!--                        custName: 'Đỗ Hà',-->
+<!--                        rateNum: 5,-->
+<!--                        timeLeft: '2 phút',-->
+<!--                        reply: '20 thảo luận',-->
+<!--                        custName: 'Đỗ Hà',-->
+<!--                        rateNum: 5,-->
+<!--                        timeLeft: '2 phút',-->
+<!--                        reply: '20 thảo luận'})"-->
+<!--                         src="../assets/image/product/photo-product.png"-->
+<!--                         alt="review-product">-->
+<!--                </div>-->
+<!--                <div class="box-photo">-->
+<!--                    <img onclick="previewPhoto({listPhoto:[-->
+<!--                        {src: '../assets/image/product/photo-product.png',-->
+<!--                        active: false},-->
+<!--                        {src: '../assets/image/product/whathot.png',-->
+<!--                        active: true},-->
+<!--                        {src: '../assets/image/product/review-product.png',-->
+<!--                        active: false}], comment: 'Đây là comment truyền từ ngoài vào',-->
+<!--                        custName: 'Đỗ Hà',-->
+<!--                        rateNum: 5,-->
+<!--                        timeLeft: '2 phút',-->
+<!--                        reply: '20 thảo luận'})"-->
+<!--                         src="../assets/image/product/whathot.png"-->
+<!--                         alt="review-product">-->
+<!--                </div>-->
+<!--                <div class="box-photo">-->
+<!--                    <img onclick="previewPhoto({listPhoto:[-->
+<!--                        {src: '../assets/image/product/photo-product.png',-->
+<!--                        active: false},-->
+<!--                        {src: '../assets/image/product/whathot.png',-->
+<!--                        active: false},-->
+<!--                        {src: '../assets/image/product/review-product.png',-->
+<!--                        active: true}], comment: 'Đây là comment truyền từ ngoài vào',-->
+<!--                        custName: 'Đỗ Hà',-->
+<!--                        rateNum: 5,-->
+<!--                        timeLeft: '2 phút',-->
+<!--                        reply: '20 thảo luận'})"-->
+<!--                         src="../assets/image/product/review-product.png"-->
+<!--                         alt="review-product">-->
+<!--                </div>-->
+<!--                <div class="box-photo">-->
+<!--                    <a href="photo-review.html?typeShow=ALL" class="overlay">-->
+<!--                        <div class="number-more">+100</div>-->
+<!--                    </a>-->
+<!--                    <img src="../assets/image/product/review-product2.png" alt="review-product">-->
+<!--                </div>-->
             </div>
         </div>
         <div class="review">
@@ -237,32 +280,26 @@
                         </div>
                         <div class="list-photo">
                             <div class="box-photo">
-                                <img onclick="previewPhoto({listPhoto:[
-                        {src: '../assets/image/product/review-product1.png',
-                        active: true},
-                        {src: '../assets/image/product/review-product.png',
-                        active: false}], comment: 'Các Mom nên thử dùng đi Các Mom '+
-                                        'nên thử dùng đi ạ.đến bây giờ e mới tìm thấy chân ái.sau '+
-                                        'khi tìm hiểu và dùng nhiều loại.tinh chất tự nhiên nên rất yên tâm',
-                        custName: 'Tiểu Hý',
-                        rateNum: 3.5,
-                        timeLeft: '8 giờ',
-                        reply: '2 thảo luận'})"
+                                <img onclick="previewPhotoV2(this)"
+                                     data-cust-name="Tiểu Hý"
+                                     data-rate-num="3.3"
+                                     data-time-left="8 giờ"
+                                     data-reply="2 thảo luận"
+                                     data-text-content="Các Mom nên thử dùng đi Các Mom
+                                     nên thử dùng đi ạ.đến bây giờ e mới tìm thấy chân ái.sau
+                                     khi tìm hiểu và dùng nhiều loại.tinh chất tự nhiên nên rất yên tâm"
                                      src="../assets/image/product/review-product1.png"
                                      alt="review-product">
                             </div>
                             <div class="box-photo">
-                                <img onclick="previewPhoto({listPhoto:[
-                        {src: '../assets/image/product/review-product1.png',
-                        active: false},
-                        {src: '../assets/image/product/review-product.png',
-                        active: true}], comment: 'Các Mom nên thử dùng đi Các Mom '+
-                                        'nên thử dùng đi ạ.đến bây giờ e mới tìm thấy chân ái.sau '+
-                                        'khi tìm hiểu và dùng nhiều loại.tinh chất tự nhiên nên rất yên tâm',
-                        custName: 'Tiểu Hý',
-                        rateNum: 3.5,
-                        timeLeft: '8 giờ',
-                        reply: '2 thảo luận'})"
+                                <img onclick="previewPhotoV2(this)"
+                                     data-cust-name="Tiểu Hý"
+                                     data-rate-num="3.3"
+                                     data-time-left="8 giờ"
+                                     data-reply="2 thảo luận"
+                                     data-text-content="Các Mom nên thử dùng đi Các Mom
+                                     nên thử dùng đi ạ.đến bây giờ e mới tìm thấy chân ái.sau
+                                     khi tìm hiểu và dùng nhiều loại.tinh chất tự nhiên nên rất yên tâm"
                                      src="../assets/image/product/review-product.png"
                                      alt="review-product">
                             </div>
@@ -270,8 +307,53 @@
                                 <a href="photo-review.html?typeShow=CMT" class="overlay">
                                     <div class="number-more">+2</div>
                                 </a>
-                                <img src="../assets/image/product/review-product2.png" alt="review-product">
+                                <img onclick="previewPhotoV2(this)"
+                                     data-cust-name="Tiểu Hý"
+                                     data-rate-num="3.3"
+                                     data-time-left="8 giờ"
+                                     data-reply="2 thảo luận"
+                                     data-text-content="Các Mom nên thử dùng đi Các Mom
+                                     nên thử dùng đi ạ.đến bây giờ e mới tìm thấy chân ái.sau
+                                     khi tìm hiểu và dùng nhiều loại.tinh chất tự nhiên nên rất yên tâm"
+                                     src="../assets/image/product/review-product2.png"
+                                     alt="review-product">
                             </div>
+<!--                            <div class="box-photo">-->
+<!--                                <img onclick="previewPhoto({listPhoto:[-->
+<!--                        {src: '../assets/image/product/review-product1.png',-->
+<!--                        active: true},-->
+<!--                        {src: '../assets/image/product/review-product.png',-->
+<!--                        active: false}], comment: 'Các Mom nên thử dùng đi Các Mom '+-->
+<!--                                        'nên thử dùng đi ạ.đến bây giờ e mới tìm thấy chân ái.sau '+-->
+<!--                                        'khi tìm hiểu và dùng nhiều loại.tinh chất tự nhiên nên rất yên tâm',-->
+<!--                        custName: 'Tiểu Hý',-->
+<!--                        rateNum: 3.5,-->
+<!--                        timeLeft: '8 giờ',-->
+<!--                        reply: '2 thảo luận'})"-->
+<!--                                     src="../assets/image/product/review-product1.png"-->
+<!--                                     alt="review-product">-->
+<!--                            </div>-->
+<!--                            <div class="box-photo">-->
+<!--                                <img onclick="previewPhoto({listPhoto:[-->
+<!--                        {src: '../assets/image/product/review-product1.png',-->
+<!--                        active: false},-->
+<!--                        {src: '../assets/image/product/review-product.png',-->
+<!--                        active: true}], comment: 'Các Mom nên thử dùng đi Các Mom '+-->
+<!--                                        'nên thử dùng đi ạ.đến bây giờ e mới tìm thấy chân ái.sau '+-->
+<!--                                        'khi tìm hiểu và dùng nhiều loại.tinh chất tự nhiên nên rất yên tâm',-->
+<!--                        custName: 'Tiểu Hý',-->
+<!--                        rateNum: 3.5,-->
+<!--                        timeLeft: '8 giờ',-->
+<!--                        reply: '2 thảo luận'})"-->
+<!--                                     src="../assets/image/product/review-product.png"-->
+<!--                                     alt="review-product">-->
+<!--                            </div>-->
+<!--                            <div class="box-photo">-->
+<!--                                <a href="photo-review.html?typeShow=CMT" class="overlay">-->
+<!--                                    <div class="number-more">+2</div>-->
+<!--                                </a>-->
+<!--                                <img src="../assets/image/product/review-product2.png" alt="review-product">-->
+<!--                            </div>-->
                         </div>
                     </div>
                     <div class="time">8 giờ</div>
@@ -559,7 +641,7 @@
     <!-- end toast message-->
 
     <div id="preview-photo">
-        <div class="action-close" onclick="closePreview()">
+        <div class="action-close" onclick="closePreview('swiper-photo-preview')">
             <img src="../assets/image/icon/ic_close.svg" alt="close">
         </div>
         <div class="swiper swiper-photo-preview">
