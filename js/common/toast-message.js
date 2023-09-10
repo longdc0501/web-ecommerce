@@ -70,10 +70,10 @@ var previewPhotoV2 = (obj) => {
             timeLeft: image.getAttribute("data-time-left"),
             reply: image.getAttribute("data-reply"),
             textContent: image.getAttribute("data-text-content"),
+            idReview: image.getAttribute("data-id")
         };
     });
 
-    console.log(listPhoto)
     // Đặt ảnh được click về active: true
     listAllPhoto.find(
         function (photo) {
@@ -107,6 +107,7 @@ var previewPhotoV2 = (obj) => {
         document.getElementById("time-preview").textContent = objActive.timeLeft
         document.getElementById("comment-preview").textContent = objActive.textContent
         document.getElementById("cust-name-preview").textContent = objActive.custName
+        document.getElementById("number-reply-cmt").textContent = objActive.reply
 
         // listPhoto.innerHTML = ''
         for (let i=0; i < list.length ; i++) {
@@ -118,7 +119,8 @@ var previewPhotoV2 = (obj) => {
                                          data-rate-num='${itemSelect.rateNum}'
                                          data-text-content='${itemSelect.textContent}'
                                          data-time-left='${itemSelect.timeLeft}'
-                                         data-reply='${itemSelect.reply}'>
+                                         data-reply='${itemSelect.reply}'
+                                         data-id='${itemSelect.idReview}'>
                                          </div>`
         }
     }

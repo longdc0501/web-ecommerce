@@ -10,7 +10,14 @@ var openSwiper = (initialSlide) => {
 
     swiperPhotoPreview.on('slideChange', function () {
         // $('.count').text(this.activeIndex + 1);
-        // console.log(this.activeIndex)
+        var domImg = this.el.querySelectorAll('img')[this.activeIndex]
+        if (domImg){
+            document.getElementById("rate-preview").textContent = domImg.getAttribute("data-rate-num")
+            document.getElementById("time-preview").textContent = domImg.getAttribute("data-time-left")
+            document.getElementById("comment-preview").textContent = domImg.getAttribute("data-text-content")
+            document.getElementById("cust-name-preview").textContent = domImg.getAttribute("data-cust-name")
+            document.getElementById("number-reply-cmt").textContent = domImg.getAttribute("data-reply")
+        }
     });
 }
 
@@ -51,7 +58,8 @@ var getDataByUrlParam = () => {
                 custName: 'Đỗ Hà',
                 rateNum: 5,
                 timeLeft: '2 phút',
-                reply: '20 thảo luận'
+                reply: '20 thảo luận',
+                id: 100
             },
                 {
                     listPhoto: [
@@ -60,7 +68,7 @@ var getDataByUrlParam = () => {
                             active: false
                         },
                         {
-                            src: '../assets/image/product/review-product.png',
+                            src: '../assets/image/product/review-product2.png',
                             active: false
                         }], comment: 'Các Mom nên thử dùng đi Các Mom ' +
                         'nên thử dùng đi ạ.đến bây giờ e mới tìm thấy chân ái.sau ' +
@@ -68,7 +76,8 @@ var getDataByUrlParam = () => {
                     custName: 'Tiểu Hý',
                     rateNum: 3.5,
                     timeLeft: '8 giờ',
-                    reply: '2 thảo luận'
+                    reply: '2 thảo luận',
+                    id: 101
                 }]
             dataShow = fakeData
         } else if (typeShow === 'CMT') {
@@ -79,7 +88,7 @@ var getDataByUrlParam = () => {
                         active: false
                     },
                     {
-                        src: '../assets/image/product/review-product.png',
+                        src: '../assets/image/product/review-product2.png',
                         active: false
                     }], comment: 'Các Mom nên thử dùng đi Các Mom ' +
                     'nên thử dùng đi ạ.đến bây giờ e mới tìm thấy chân ái.sau ' +
@@ -87,7 +96,8 @@ var getDataByUrlParam = () => {
                 custName: 'Tiểu Hý',
                 rateNum: 3.5,
                 timeLeft: '8 giờ',
-                reply: '2 thảo luận'
+                reply: '2 thảo luận',
+                id: 101
             }]
             dataShow = fakeData
         }
@@ -97,7 +107,17 @@ var getDataByUrlParam = () => {
         for (let i = 0; i < dataShow.length; i++) {
             if (dataShow[i].listPhoto) {
                 for (let j = 0; j < dataShow[i].listPhoto.length; j++) {
-                    dom.innerHTML += `<div class="grid-item" onclick="showPreview(${i}, ${j})" ><img src=${dataShow[i].listPhoto[j].src} alt="product"></div>`
+                    dom.innerHTML += `<div class="grid-item">
+                                        <img src=${dataShow[i].listPhoto[j].src}
+                                         alt="product"
+                                         data-cust-name='${dataShow[i].custName}'
+                                         data-rate-num='${dataShow[i].rateNum}'
+                                         data-text-content='${dataShow[i].comment}'
+                                         data-time-left='${dataShow[i].timeLeft}'
+                                         data-reply='${dataShow[i].reply}'
+                                         data-id='${dataShow[i].id}'
+                                         onclick="previewPhotoV2(this)">
+                                    </div>`
                 }
             }
         }
@@ -113,7 +133,7 @@ var showPreview = (index_i, index_j) => {
         }
     }
     console.log(dataShow)
-    previewPhoto(dataShow[index_i])
+    previewPhotoV2(dataShow[index_i])
 }
 
 // get data
