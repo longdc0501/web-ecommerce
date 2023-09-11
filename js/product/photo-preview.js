@@ -9,7 +9,13 @@ var openSwiper = (initialSlide) => {
     });
 
     swiperPhotoPreviewProduct.on('slideChange', function () {
-        // $('.count').text(this.activeIndex + 1);
-        // console.log(this.activeIndex)
+        var domImg = this.el.querySelectorAll('img')[this.activeIndex]
+        if (domImg){
+            document.getElementById("rate-preview").textContent = domImg.getAttribute("data-rate-num")
+            document.getElementById("time-preview").textContent = domImg.getAttribute("data-time-left")
+            document.getElementById("comment-preview").textContent = domImg.getAttribute("data-text-content")
+            document.getElementById("cust-name-preview").textContent = domImg.getAttribute("data-cust-name")
+            document.getElementById("number-reply-cmt").textContent = domImg.getAttribute("data-reply")
+        }
     });
 }
