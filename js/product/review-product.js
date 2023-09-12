@@ -37,3 +37,12 @@ var openSwiper = (initialSlide) => {
         }
     });
 }
+
+var chooseFilter = (dom) => {
+    const checkExists = dom.classList.contains('active')
+    if (checkExists){
+        dom.classList.remove('active')
+    }else{
+        dom.classList.add('active')
+    }
+}
