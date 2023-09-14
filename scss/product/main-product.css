@@ -1611,6 +1611,75 @@
   line-height: normal;
 }
 
+#photo-review-modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 888;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  visibility: Hidden;
+  background: #FFF;
+}
+#photo-review-modal .header {
+  background: #FFF;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  max-width: 768px;
+  height: 48px;
+}
+#photo-review-modal .header .title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #172B4D;
+  font-family: "SF Pro Text";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#photo-review-modal .header .action-back {
+  position: absolute;
+  z-index: 3;
+  top: 12px;
+  left: 16px;
+}
+#photo-review-modal .header .action-back img {
+  width: 24px;
+}
+#photo-review-modal .grid-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  justify-content: space-between;
+  justify-items: stretch;
+  align-content: baseline;
+  margin-top: 64px;
+  background: #FFF;
+  min-height: calc(100vh - 64px);
+}
+#photo-review-modal .grid-product .grid-item {
+  border-radius: 6px;
+  border: 1px solid #EBEAED;
+  aspect-ratio: 1/1;
+}
+#photo-review-modal .grid-product .grid-item img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 body {
   margin: unset;
   background: #ECEFF1;

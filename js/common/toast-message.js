@@ -163,4 +163,47 @@ function closePreview(classSwiper){
                 <div class="reply-comment" id="number-reply-cmt">24 thảo luận</div>
             </div>
         </div>`
+}var allPhoto = (obj) =>{
+    // Get the snackbar DIV
+    var x = document.getElementById("photo-review-modal")
+    var listPhoto = document.getElementById("grid-product")
+    var images = Array.from(obj.parentElement.parentElement.querySelectorAll("img"));
+
+    // Đặt tất cả các ảnh về active: false
+    let listAllPhoto = Array.from(images).map(function (image) {
+        return {
+            src: image.src,
+            active: false,
+            custName: image.getAttribute("data-cust-name"),
+            rateNum: image.getAttribute("data-rate-num"),
+            timeLeft: image.getAttribute("data-time-left"),
+            reply: image.getAttribute("data-reply"),
+            textContent: image.getAttribute("data-text-content"),
+            idReview: image.getAttribute("data-id")
+        };
+    });
+
+    let list = listAllPhoto
+    listPhoto.innerHTML = ''
+
+    for (let i=0; i < list.length ; i++) {
+        var itemSelect = list[i];
+        listPhoto.innerHTML += `<div class="grid-item">
+                                        <img src=${itemSelect.src}
+                                         alt="product"
+                                         data-cust-name='${itemSelect.custName}'
+                                         data-rate-num='${itemSelect.rateNum}'
+                                         data-text-content='${itemSelect.textContent}'
+                                         data-time-left='${itemSelect.timeLeft}'
+                                         data-reply='${itemSelect.reply}'
+                                         data-id='${itemSelect.idReview}'
+                                         onclick="previewPhotoV2(this)">
+                                    </div>`
+    }
+    x.className = "show-appear";
+
+}
+
+var closeModalPhoto = () => {
+    document.getElementById("photo-review-modal").className = ""
 }
